@@ -1,0 +1,149 @@
+/* IMPOSTAZIONI GENERALI *******************************************/
+
+html{
+    max-width: 500px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+}
+
+main, footer{
+    line-height: 1.7em;
+}
+
+h1{
+    font-size: 35px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 25px;
+    text-align: center;
+    line-height: 60px;
+}
+
+h3{
+    font-size: 25px;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+section{
+    padding: 30px;
+}
+
+b{
+    font-weight: 700;
+}
+
+strong{
+    color: #027794;
+    font-weight: 600;
+}
+
+i, blockquote{
+    font-style: italic;
+}
+
+a{
+    color: rgb(255, 111, 111);
+}
+
+.hr-solid{
+    border: #027794 solid 3px;
+    margin-top: 0px;
+}
+
+.hr-dashed{
+    border: #027794 dashed 1px;
+    margin: 0 30px;
+}
+
+ul{
+    padding: 0 50px;
+}
+
+dd{
+    padding: 0 30px;
+}
+
+kbd{
+    font-style: italic;
+    font-weight: 600;
+    color: yellow;
+}
+
+/* HEADER **********************************************************/
+
+header{
+    background-color: #01a0c6;
+}
+
+header h1 span{
+    color: #01a0c6;
+    background-color: #fff;
+}
+
+header h2{
+    font-size: 26px;
+    padding: 25px;
+    text-align: center;
+    font-variant: small-caps;
+}
+
+/* MAIN ************************************************************/
+
+figure{
+    text-align: center;
+    padding: 20px;
+}
+
+main h2{
+    font-size: 35px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 25px;
+    text-align: center;
+    color: #01a0c6;
+}
+
+figure img{
+    width: 350px;
+    height: auto;
+    border: #ccc solid 2px;
+    padding: 10px;
+}
+
+.titolo-bq{
+    padding: 20px;
+}
+
+blockquote{
+    background-color: lightgray;
+    border-radius: 20px;
+    padding: 20px 30px 40px 30px;
+}
+
+mark{
+    background-color: #027794;
+    color: #fff;
+}
+
+/* ELEMENTI NEL MAIN ************************************************/
+
+/* FOOTER ***********************************************************/
+
+footer{
+    text-align: center;
+    color: #fff;
+    background-color: #353535;
+    border-top: #027794 solid 6px;
+    margin-top: 50px;
+}
+
+footer p{
+    font-size: 18px;
+    padding: 10px;
+    line-height: 1.5em;
+}
+
+footer p small{
+    color: darkgrey;
+}
