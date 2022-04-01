@@ -1,0 +1,196 @@
+/* GENERAL SETTINGS *
+*****************************************************************/
+body{
+    color: #393d41;
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.65;
+}
+
+h1, h2, h3, h4{
+    color: #25a2c3;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+}
+
+h1{
+    font-size: 3rem;
+    line-height: 1;
+}
+
+h2{
+    font-size: 2.4rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+h4{
+    font-size: 1.3rem;
+}
+
+/* HEADER 
+*****************************************************************/
+
+#header{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    text-align: center;
+}
+
+#logo{
+    height: 12vw;
+    margin: 40px;
+}
+
+/* MAIN 
+*****************************************************************/
+
+#main{
+    width: 100%;
+}
+
+#intro{
+    text-align: center;
+    background-image: url(../images/banner.jpg);
+    background-position: center;
+    background-position-y: 5%;
+    background-size: 150%;
+    padding: 50px;
+}
+
+#intro h1{
+    margin-top: 30px;
+}
+
+#intro p{
+    padding: 30px 0;
+}
+
+#intro div{
+    padding: 20px 0;
+}
+
+.button{
+    background-color: #f04c2f;
+    text-decoration: none;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 5px;
+}
+
+.button:hover{
+    background-image: linear-gradient(#ec563b, #e22d0e);
+    color: white;
+    padding: 22px 52px;
+    box-shadow: 1px 1px 5px black;
+}
+
+/* DESCRIPTION 
+*****************************************************************/
+
+#description{
+    text-align: center;
+    margin: 60px 80px;
+}
+
+#description div{
+    margin: 30px 0;
+}
+
+#description p{
+    margin-top: 10px;
+}
+
+.desc-img{
+    border-radius: 100%;
+    width: 100%;
+    max-width: 600px;
+}
+
+/* TESTIMONIANZE *****************************************************************/
+
+#testimonianze{
+    background-color: #e22d0e;
+    text-align: center;
+    color: white;
+    padding: 50px;
+}
+
+#testimonianze h2{
+    color: white;
+    margin-top: 30px;
+}
+
+
+blockquote{
+    font-style: italic;
+    padding: 40px 0;
+}
+
+cite{
+    font-size: 1.8rem;
+}
+
+/* SCHEDE / ARTICOLI 
+*****************************************************************/
+
+#schede{
+    text-align: center;
+    padding: 30px 0;
+}
+
+.article{
+    border: 1px solid #dee1e3;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin: 50px 30px;
+}
+
+.article img{
+    width: 100%;
+}
+
+.arg{
+    padding: 20px;
+}
+
+.arg p{
+    margin: 15px 0 30px;
+}
+
+/* FOOTER 
+*****************************************************************/
+
+#footer{
+    background-color: #25a2c3;
+    text-align: center;
+    color: #c8e7f0;
+}
+
+#footer h2{
+    color: white;
+    padding: 50px 0 20px;
+}
+
+#footer address{
+    padding-bottom: 30px;
+}
+
+#footer address a{
+    color: #c8e7f0;
+}
+
+hr{
+    width: 260px;
+}
+
+.copy{
+    padding: 30px 0 90px;
+}
+
+.copy a{
+    color: #c8e7f0;
+}
