@@ -1,0 +1,432 @@
+/* IMPOSTAZIONI GENERALI */
+
+body{
+    font-family: 'Fira Sans', sans-serif;
+    color: #000;
+    line-height: 1.8;
+    font-size: 1.5rem;
+}
+
+h1, h2, h3, h4{
+    line-height: 1;
+}
+
+h1{
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 3.5rem;
+}
+
+h3{
+    font-size: 2.4rem;
+}
+
+h4{
+    font-size: 1.8rem;
+}
+
+.btn{
+    background: rgb(108,193,226);
+    background: linear-gradient(90deg, rgba(108,193,226,1) 0%, rgba(57,47,122,1) 100%);
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+a{
+    font-size: 1.9rem;
+}
+
+.icon{
+    color: rgb(222, 0, 0);
+    font-size: 2em;
+}
+
+.container-mobile{
+    padding: 30px;
+}
+
+.dist-xl{
+    margin-bottom: 70px;
+}
+.dist-large{
+    margin-bottom: 30px;
+}
+
+.dist-small{
+    margin-bottom: 20px;
+}
+
+/* HEADER */
+
+header{
+    padding: 1em;
+    box-shadow: 0 2px 15px #d3d3d3;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#open-menu{
+    display: none;
+}
+#main-menu{
+    text-align: right;
+}
+
+#menu{
+    height: 0;
+    overflow: hidden;
+    transition: height .5s;
+    text-align: right;
+}
+
+input:checked + #menu{
+    height: 200px;
+}
+
+#menu a:not(.btn){
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #000;
+}
+
+/* MAIN */
+
+#home-1{
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+#home-1 h1, #home-1 p{
+    text-shadow: 2px 2px 3px #000;
+    margin-top: 30px;
+}
+
+#home-1 p{
+    margin-bottom: 30px;
+}
+
+#home-1 a{
+    animation-name: pulsa;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    box-shadow: 0px 0px 10px black; 
+}
+
+@keyframes pulsa{
+    0%{box-shadow: 0px 0px 1px black}
+    100%{box-shadow: 0px 0px 20px black;}
+}
+
+#home-2, #home-3{
+    text-align: center;
+    margin-bottom: -30px;
+}
+
+#home-3{
+    display: flex;
+    flex-direction: column;
+}
+
+#home-3 div h3{
+    margin-top: -20px;
+}
+
+#home-3 div .icon{
+    font-size: 4rem;
+}
+
+#home-4{
+    background-color: #0c0633;
+    color: white;
+    text-align: center;
+    padding: 150px 20px 150px;
+}
+
+#home-5{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 70px;
+}
+
+#home-5 span{
+    font-size: 3rem;
+}
+
+#home-5 h3{
+    padding: 20px 0;
+}
+
+#home-5:last-child{
+    width: 100%;
+}
+
+#chi-siamo-1{
+    text-align: center;
+    padding-top: 70px;
+}
+
+#chi-siamo-2{
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#chi-siamo-2 img{
+    width: 100%;
+    margin-top: -20px;
+}
+
+#chi-siamo-3{
+    padding: 30px;
+}
+
+#chi-siamo-3 h3{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.table-mobile{
+    width: 100%;
+}
+
+.bkg-table{
+    background-color: #d2dce7;
+}
+
+.table-mobile td{
+    padding: 7px;
+    font-size: 1.3rem;
+}
+
+.table-mobile td:first-of-type{
+    font-weight: 700;
+    width: 45%;
+}
+
+.table-desktop{
+    text-align: center;
+    display: none;
+}
+
+.table-desktop thead{
+    background-color: #5b85b1;
+    color: white;
+}
+
+.table-desktop td{
+    padding: 7px;
+    font-size: 1.3rem;
+}
+
+#cont-main h1{
+    padding: 50px 0 20px;
+    text-align: center;
+}
+
+#contatti-1{
+text-align: center;}
+
+#contatti-1 input, #contatti-1 textarea{
+    width: 100%;
+    font-size: .8em;
+    margin: 15px 0;
+}
+
+#contatti-1 input{
+    height: 50px;
+}
+
+input::placeholder, textarea::placeholder{
+    font-style: italic;
+    padding: 20px;
+}
+
+#contatti-1 button{
+    font-size: 1.2em;
+    border: none;
+}
+
+#contatti-2{
+    text-align: center;
+}
+
+#contatti-2 p{
+    font-size: .9em;
+}
+
+#contatti-2 a{
+    color: #000;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+/* FOOTER */
+
+#footer{
+    background-color: rgb(238, 238, 238);
+    padding: 40px 60px;
+}
+
+#footer section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#footer div{
+    padding: 1.2rem 0;
+    margin-bottom: 10px;
+}
+
+#footer-s1 p{
+    margin-top: 30px;
+}
+
+#footer-s2 h4{
+    margin-bottom: 20px;
+}
+
+#footer-s3 h4{
+    margin-bottom: 30px;
+}
+
+#newsletter input{
+    width: calc(100% - 8px);
+    height: 4rem;
+}
+
+#newsletter button{
+    font-size: 1em;
+    border: none;
+    width: 100%;
+    height: 4rem;
+}
+
+#footer address{
+    text-align: center;
+}
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 768px){
+    #toggle-mobile, #open-menu{
+        display: none;
+    }
+
+    #menu{
+        height: 100%;
+    }
+
+    #menu li{
+        display: inline-block;
+        margin-left: 20px;
+    }
+
+    #home-1{
+        padding: 30px 8vw;
+    }
+
+    #home-2{
+        padding: 0 10vw;
+    }
+
+    #home-3, #home-5, #footer section{
+        flex-direction: row;
+        flex-grow: 1;
+        flex-basis: 30%;
+        justify-content: space-evenly;
+    }
+
+    #home-3 p:not(.icon){
+        text-align: left;
+        font-size: 0.7em;
+    }
+
+    #home-5{
+        max-width: 800px;
+        gap: 10px;
+        text-align: left;
+        margin: 50px auto;
+    }
+
+    #home-5 p{
+        font-size: .7em;
+    }
+
+    #footer div{
+        padding: 8px;
+    }
+
+    #footer address{
+        margin-top: 30px;
+    }
+
+    #chi-siamo-2{
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .table-mobile{
+        display: none;
+    }
+
+    .table-desktop{
+        display: contents;
+    }
+
+    #chi-siamo-3{
+        max-width: 780px;
+        margin: 50px auto;
+    }
+
+    #contatti-main{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    #contatti-1{
+        margin: 0 5vw;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    #home-1{
+        padding: 30px 20vw;
+    }
+
+    #home-2{
+        padding: 30px 35vw;
+    }
+
+    #home-3{
+        padding: 30px 15vw;
+        margin-bottom: 50px;
+    }
+
+    #chi-siamo-1, #chi-siamo-2{
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    #contatti-main{
+        padding: 0 10vw;
+    }
+
+    #footer{
+        padding: 40px 15vw;
+    }
+}
