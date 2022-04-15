@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <section id="calculator">
+        <div id="diplay">
+            <div id="history">
+                <p></p>
+            </div>
+            <input type="text" id="display-input" placeholder="0" maxlength="8">
+        </div>
+
+        <div class="container-button">
+            <div class="numbers">
+                <button class="button canc" onclick="reset()">AC</button>
+                <button class="button del" onclick="deleteOne()"><img src="assets/img/backspace.png" alt="backspace"></button>
+                <button id="square" class="button" onclick="square()">x&#178;</button>
+                <button class="button operators" data-operation="/" onclick="division(this)">/</button>
+                <button class="button" data-number="7" onclick="addNumber(this)">7</button>
+                <button class="button" data-number="8" onclick="addNumber(this)">8</button>
+                <button class="button" data-number="9" onclick="addNumber(this)">9</button>
+                <button class="button operators" data-operation="*" onclick="multiplication(this)">x</button>
+                <button class="button" data-number="4" onclick="addNumber(this)">4</button>
+                <button class="button" data-number="5" onclick="addNumber(this)">5</button>
+                <button class="button" data-number="6" onclick="addNumber(this)">6</button>
+                <button class="button operators" data-operation="-" onclick="subtraction(this)">-</button>
+                <button class="button" data-number="1" onclick="addNumber(this)">1</button>
+                <button class="button" data-number="2" onclick="addNumber(this)">2</button>
+                <button class="button" data-number="3" onclick="addNumber(this)">3</button>
+                <button class="button operators" data-operation="+" onclick="addiction(this)">+</button>
+                <button class="button" data-number="0" onclick="addNumber(this)">0</button>
+                <button class="button operators comma" data-number="." onclick="addNumber(this)">,</button>
+                <button class="button equal" onclick="result()">=</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
