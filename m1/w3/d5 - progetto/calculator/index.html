@@ -15,6 +15,13 @@
 </head>
 
 <body>
+    <section id="s1">
+        <img src="assets/img/logo.svg" alt="logo-epicode">
+        <h1>Calculator</h1>
+        <h3>Basic claculator with<br>standard functions</h3>
+        <p>A project by:</p>
+        <h2>Ignazio Valenti</h2>
+    </section>
     <section id="calculator">
         <div id="diplay">
             <div id="history">
@@ -26,23 +33,23 @@
         <div class="container-button">
             <div class="numbers">
                 <button class="button canc" onclick="reset()">AC</button>
-                <button class="button del" onclick="deleteOne()"><img src="assets/img/backspace.png" alt="backspace"></button>
+                <button class="button del" onclick="backSpace()"><img src="assets/img/backspace.png" alt="backspace"></button>
                 <button id="square" class="button" onclick="square()">x&#178;</button>
-                <button class="button operators" data-operation="/" onclick="division(this)">/</button>
-                <button class="button" data-number="7" onclick="addNumber(this)">7</button>
-                <button class="button" data-number="8" onclick="addNumber(this)">8</button>
-                <button class="button" data-number="9" onclick="addNumber(this)">9</button>
-                <button class="button operators" data-operation="*" onclick="multiplication(this)">x</button>
-                <button class="button" data-number="4" onclick="addNumber(this)">4</button>
-                <button class="button" data-number="5" onclick="addNumber(this)">5</button>
-                <button class="button" data-number="6" onclick="addNumber(this)">6</button>
-                <button class="button operators" data-operation="-" onclick="subtraction(this)">-</button>
-                <button class="button" data-number="1" onclick="addNumber(this)">1</button>
-                <button class="button" data-number="2" onclick="addNumber(this)">2</button>
-                <button class="button" data-number="3" onclick="addNumber(this)">3</button>
-                <button class="button operators" data-operation="+" onclick="addiction(this)">+</button>
-                <button class="button" data-number="0" onclick="addNumber(this)">0</button>
-                <button class="button operators comma" data-number="." onclick="addNumber(this)">,</button>
+                <button class="button operators" onclick="addNumber('/')">/</button>
+                <button class="button" onclick="addNumber('7')">7</button>
+                <button class="button" onclick="addNumber('8')">8</button>
+                <button class="button" onclick="addNumber('9')">9</button>
+                <button class="button operators" onclick="addNumber('*')">x</button>
+                <button class="button" onclick="addNumber('4')">4</button>
+                <button class="button" onclick="addNumber('5')">5</button>
+                <button class="button" onclick="addNumber('6')">6</button>
+                <button class="button operators" onclick="addNumber('-')">-</button>
+                <button class="button" onclick="addNumber('1')">1</button>
+                <button class="button" onclick="addNumber('2')">2</button>
+                <button class="button" onclick="addNumber('3')">3</button>
+                <button class="button operators" onclick="addNumber('+')">+</button>
+                <button class="button" onclick="addNumber('0')">0</button>
+                <button class="button operators comma" onclick="addNumber('.')">,</button>
                 <button class="button equal" onclick="result()">=</button>
             </div>
         </div>
