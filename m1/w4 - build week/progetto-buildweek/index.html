@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/all.css">
+    <link rel="stylesheet" href="assets/css/featured.css">
+    <link rel="stylesheet" href="assets/css/blog.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/contatti.css">
+    <link rel="stylesheet" href="assets/css/aboutus.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="assets/css/news.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/animazioni.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.lineicons.com/3.0/lineicons.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <header id="header">
+
+        </header>
+        <div id="cane">
+            <img src="assets/img/logo.png" alt="">
+
+            <!-- <div id="piccola">
+
+                <label for="apri-gatto" id="toggle" onclick="menu"> <i class="lni lni-menu"></i></label>
+                <input id="apri-gatto" type="checkbox"></input>
+                <div id="gatto">
+                    <ul>
+                        <li></li><a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT US</a></li>
+                        <li><a href="#"> BLOG</a></li>
+                        <li><a href="#"> MENU</a></li>
+                        <li><a href="#"> NEWS</a></li>
+                        <li><a href="#"> CONTACTS</a></li>
+                    </ul>
+                </div> -->
+
+            <div id="saliera" onclick="sale()"> <i class="lni lni-menu"></i> </div>
+        </div>
+
+
+
+        <div id="bloccol">
+            <nav id="grande">
+                <div>
+                    <img src="assets/img/logo.png" alt="">
+                </div>
+
+                <div id="nowrap">
+                    <a class="brie sandra" href="#">HOME</a>
+                    <a class="brie" href="#about-us">ABOUT US</a>
+                    <a class="brie" href="#bloggo"> BLOG</a>
+                    <a class="brie" href="#menuuu"> MENU</a>
+                    <a class="brie" href="#scrivete"> NEWS</a>
+                    <a class="brie" href="#contattate"> CONTACTS</a>
+                </div>
+
+
+            </nav>
+        </div>
+
+        <div id="tendina">
+
+            <a class="speck sandra2" href="#">HOME</a>
+            <a class="speck" href="#about-us">ABOUT US</a>
+            <a class="speck" href="#bloggo"> BLOG</a>
+            <a class="speck" href="#menuuu"> MENU</a>
+            <a class="speck" href="#scrivete"> NEWS</a>
+            <a class="speck" href="#contattate"> CONTACTS</a>
+
+        </div>
+
+        <script src="assets/js/header.js"></script>
+
+        <div id="featured" class="animaz-davide1">
+            <div class="slider-container">
+                <div id="slider-title">
+                    <h3>FEATURED <span>WORKS</span></h3>
+                    <a class="next" onclick="forward()"><i class="fas fa-angle-right"></i></a>
+                </div>
+                <div id="slider">
+                    <div id="slide1"><img class="slider-img" src="assets/img/slider/slider-img-1.jpg" alt="foto-1">
+                    </div>
+                    <div id="slide2"><img class="slider-img" src="assets/img/slider/slider-img-2.jpg" alt="foto-2">
+                    </div>
+                    <div id="slide3"><img class="slider-img" src="assets/img/slider/slider-img-3.jpg" alt="foto-3">
+                    </div>
+                    <div id="slide4"><img class="slider-img" src="assets/img/slider/slider-img-4.jpg" alt="foto-4">
+                    </div>
+                    <div id="slide5"><img class="slider-img" src="assets/img/slider/slider-img-1.jpg" alt="foto-1">
+                    </div>
+                    <div id="slide6"><img class="slider-img" src="assets/img/slider/slider-img-2.jpg" alt="foto-2">
+                    </div>
+                    <div id="slide7"><img class="slider-img" src="assets/img/slider/slider-img-3.jpg" alt="foto-3">
+                    </div>
+                    <div id="slide8"><img class="slider-img" src="assets/img/slider/slider-img-4.jpg" alt="foto-4">
+                    </div>
+                </div>
+                <div id="dots-slider">
+                    <a class="dot dot-1 active" href="#slide1" onclick="getImg(0)"></a>
+                    <a class="dot dot-2" href="#slide2" onclick="getImg(1)"></a>
+                    <a class="dot dot-3" href="#slide3" onclick="getImg(2)"></a>
+                    <a class="dot dot-4" href="#slide4" onclick="getImg(3)"></a>
+                    <a class="dot dot-5" href="#slide5" onclick="getImg(4)"></a>
+                    <a class="dot dot-6" href="#slide6" onclick="getImg(5)"></a>
+                    <a class="dot dot-7" href="#slide7" onclick="getImg(6)"></a>
+                    <a class="dot dot-8" href="#slide8" onclick="getImg(7)"></a>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="about-us">
+            <img class="imgabout" src="assets/img/cooker-img.png" alt="">
+            <h3 id="about-us" class="titoloabout">Your <span class="orangeabout"> Restaurant's </span>
+                <br> Website Has
+                To Look
+                <span class="orangeabout">Good</span>
+                <hr>
+
+            </h3>
+
+            <p class="pabout">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Et maiores placeat quo itaque modi beatae
+                provident, tempore dolorem ex possimus qui? Aperiam saepe harum pariatur quos
+                at ullam error corporis. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Culpa harum tenetur laboriosam debitis dolore.
+            </p>
+        </div>
+
+
+        <div id="blog">
+            <div id="div-blog">
+                <div id="blog-titolo">
+                    <h3 id="bloggo">Latest <span>From</span> the <span>Blog</span></h3>
+                </div>
+                <hr class="spazio-blog">
+                <div id="latest">
+                    <div class="articles">
+                        <div class="testo-articles">
+                            <h4>Homestyle Chicken Pot Pie</h4>
+                            <hr>
+                            <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
+                        </div>
+                        <div class="foto-articles"><img src="assets/img/blog/blog-img-1.jpg" alt=""></div>
+                    </div>
+                    <div class="articles">
+                        <div class="testo-articles">
+                            <h4>Homestyle Chicken Pot Pie</h4>
+                            <hr>
+                            <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
+                        </div>
+                        <div class="foto-articles"><img src="assets/img/blog/blog-img-2.jpg" alt=""></div>
+                    </div>
+                    <div class="articles articles-reverse">
+                        <div class="testo-articles testo-reverse">
+                            <h4>Homestyle Chicken Pot Pie</h4>
+                            <hr>
+                            <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
+                        </div>
+                        <div class="foto-articles foto-reverse"><img src="assets/img/blog/blog-img-3.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="articles articles-reverse">
+                        <div class="testo-articles testo-reverse">
+                            <h4>Homestyle Chicken Pot Pie</h4>
+                            <hr>
+                            <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
+                        </div>
+                        <div class="foto-articles foto-reverse"><img src="assets/img/blog/blog-img-4.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="articles">
+                        <div class="testo-articles">
+                            <h4>Homestyle Chicken Pot Pie</h4>
+                            <hr>
+                            <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
+                        </div>
+                        <div class="foto-articles"><img src="assets/img/blog/blog-img-5.jpg" alt=""></div>
+                    </div>
+                    <div class="articles">
+                        <div class="testo-articles">
+                            <h4>Homestyle Chicken Pot Pie</h4>
+                            <hr>
+                            <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
+                        </div>
+                        <div class="foto-articles"><img src="assets/img/blog/blog-img-6.jpg" alt=""></div>
+                    </div>
+                </div>
+                <div class="grid-bottone">
+                    <div class="bottone" id="more-info"><button>
+                            <p>MORE INFO</p>
+                        </button></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="menu">
+
+            <div id="menu-titolo">
+                <h1 id="menuuu" class="menuuu"> our <span>MENU</span> the <span>PRICE</span>
+                </h1>
+
+                <hr class="hrhr">
+
+                <p class="p-titolo-menu"> Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor
+                    incidunt ut
+                    labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerciation ullmamco </p>
+            </div>
+            <div id="menu-prezzi">
+                <div id="menu-prezzi-titolo">
+                    <h2> FEATURED <span id="menu-titolo-span"> ON THE WEEK</span></h2>
+                </div>
+                <div id="tutte-pietanze">
+                    <ul>
+                        <li>
+                            <div class="item">
+                                <div class="pietanza">
+                                    <div class="row">
+                                        <h2>Pancakes n' Such</h2>
+                                        <!-- <div id="puntini-mezzo"> </div> -->
+
+
+                                        <span> $ 25.00 </span>
+                                    </div>
+                                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, magni eligendi.
+                                        Ipsam,
+                                        libero culpa! Deleniti et vel veritatis eum aut, ea dolorem.
+                                    </p>
+
+
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="pietanza">
+                                <div class="row">
+                                    <h2>Homestyle Chicken Pot Pie</h2>
+
+                                    <span> $ 10.00 </span>
+                                </div>
+                                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, magni eligendi.
+                                    Ipsam,
+                                    libero culpa! Deleniti et vel veritatis eum aut, ea dolorem. </p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="pietanza">
+                                <div class="row">
+                                    <h2>Cereal, Panecillos y Frutos</h2>
+
+                                    <span> $ 5.00</span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, magni eligendi.
+                                    Ipsam,
+                                    libero culpa! Deleniti et vel veritatis eum aut, ea dolorem.</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="pietanza">
+                                <div class="row">
+                                    <h2>Meat of Skewers</h2>
+
+                                    <span> $ 15.00</span>
+                                </div>
+                                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, magni eligendi.
+                                    Ipsam,
+                                    libero culpa! Deleniti et vel veritatis eum aut, ea dolorem.</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="pietanza">
+
+                                <div class="row">
+                                    <h2>Steak with a Garlic and Parsley Risotto</h2>
+
+                                    <span> $ 75.00</span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, magni eligendi.
+                                    Ipsam,
+                                    libero culpa! Deleniti et vel veritatis eum aut, ea dolorem.</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="pietanza">
+                                <div class="row">
+                                    <h2>Caesar Salad</h2>
+
+                                    <span> $ 7.00 </span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, magni eligendi.
+                                    Ipsam,
+                                    libero culpa! Deleniti et vel veritatis eum aut, ea dolorem.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="bottone2">MORE INFO</button>
+            </div>
+
+        </div>
+
+        <div id="separazione-due"></div>
+
+
+        <div id="newsletter">
+            <div id="foto-newsletter">
+
+                <div id="scritte">
+                    <div>
+                        <h2 class="titolo-news"> SUBSCRIBE <span>to our</span> NEWSLETTER
+
+                        </h2>
+
+                    </div>
+                    <hr class="hr-news">
+
+                    <p id="scrivete" class="scrivete">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod
+                    </p>
+
+
+                    <form id="form-button" action="">
+                        <input type="text" placeholder="Enter your email to subscribe...">
+                        <button type="submit">SUBSCRIBE</button>
+                    </form>
+
+
+                    <form id="form-piccola" action="">
+
+                        <input type="text" placeholder="Enter your email to subscribe...">
+                        <button type="submit">SUBSCRIBE</button>
+
+                    </form>
+
+
+
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+        <div id="separazione"></div>
+
+
+
+
+        <div id="contatti">
+            <div id="contatti-in">
+                <div id="titcontatti">
+                    <h1 class="contact-us">our <span>CONTACT US</span></h1>
+                </div>
+                <hr id="hrrr">
+                <h3 id="contattate" class="sign-up">SIGN UP FOR <span>EMAIL ALERTS</span></h3>
+                <form>
+                    <input type="text" id="fname" name="fname" placeholder="Write yor full name here..."
+                        class="dati-news"><br>
+                    <input type="email" id="mailaddress" name="mailaddress"
+                        placeholder="Write your email address here..." class="dati-news">
+                </form>
+                <form>
+                    <textarea id="recensione" placeholder="Write your message here..." class="dati-news"></textarea><br>
+                    <button type="submit" class="bottone3">SEND YOUR MESSAGE</button>
+                </form>
+            </div>
+            <div id="contatti-out">
+                <div id="contact-info" class="contatti-divs">
+                    <h3>CONTACT <span>INFO</span></h3>
+                    <div id="cont-info">
+                        <div>
+                            <h3><i class="fas fa-phone-alt"></i><span>Telephone<span></h3>
+                            <p>(000) 123 456 78- (000) 123 4567 89</p>
+                        </div>
+                        <div>
+                            <h3><i class="fas fa-map-marker-alt"></i><span>Address<span></h3>
+                            <p>2046 Blue Spruce Lane Laurel Canada</p>
+                        </div>
+                        <div>
+                            <h3><i class="fas fa-envelope"></i><span>E mail<span></h3>
+                            <p>rest@gmail.com - rest@mail.ru</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="blog-posts" class="contatti-divs">
+                    <h3>LATEST <span>BLOG POSTS</span></h3>
+                    <div>
+                        <h3><span>Nov 9-2014</span></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet explicabo neque natus
+                            in.
+                        </p>
+                    </div>
+                    <div>
+                        <h3><span>Sep 8-2014</span></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet explicabo neque natus
+                            in.
+                        </p>
+                    </div>
+                </div>
+                <div id="stream-us" class="contatti-divs">
+                    <div id="photo-stream">
+                        <h3>PHOTO <span>STREAM</span></h3>
+                        <img src="assets/img/photo/photo-1.jpg" alt="" srcset="">
+                        <img src="assets/img/photo/photo-2.jpg" alt="" srcset="">
+                        <img src="assets/img/photo/photo-3.jpg" alt="" srcset="">
+                        <img src="assets/img/photo/photo-4.jpg" alt="" srcset="">
+                    </div>
+
+                    <div id="follow-us" class="contatti-divs">
+                        <h3>Follow <span>US</span></h3>
+                        <div id="gruppo-icone">
+                            <a href="#" id="ico-twitter">
+                                <i class="fab fa-twitter"></i>
+
+                            </a>
+                            <a href="#" id="ico-fb">
+                                <i class=" fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" id="ico-browser">
+                                <i class="fas fa-basketball-ball"></i>
+                            </a>
+                            <a href="#" id="ico-behance">
+                                <i class="fab fa-behance"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <footer>
+            <div id=copyright>
+                <p>Copyright &copy; 2014 - All Right Reserved.Design and Developed by <span>Themefisher</span>
+                </p>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

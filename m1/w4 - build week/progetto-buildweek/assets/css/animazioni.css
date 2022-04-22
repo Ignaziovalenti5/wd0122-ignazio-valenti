@@ -1,0 +1,694 @@
+/* ANIMAZIONI ATTIVATE DA JS */
+
+/*
+Animazione dal basso verso l'alto con opacity che aumenta.
+Preapplicata sul primo featured
+Div a cui applicare: imgabout, titoloabout, pabout, menuuu, hrhr, p-titolo-menu, ogni singolo .pietanza, titolo-news, hr-news, scrivete, contact-us 
+*/
+
+.animaz-davide1 {
+    -webkit-animation: top-opacity 1.5s ease-out;
+    -moz-animation: top-opacity 1.5s ease-out;
+    -o-animation: top-opacity 1.5s ease-out;
+    animation: top-opacity 1.5s ease-out;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.animaz-davide11 {
+    -webkit-animation: top-opacity 1.5s ease-out;
+    -moz-animation: top-opacity 1.5s ease-out;
+    -o-animation: top-opacity 1.5s ease-out;
+    animation: top-opacity 1.5s ease-out;
+    /* animation-delay: 0.4s; */
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.animaz-davide12 {
+    -webkit-animation: top-opacity 1.5s ease-out;
+    -moz-animation: top-opacity 1.5s ease-out;
+    -o-animation: top-opacity 1.5s ease-out;
+    animation: top-opacity 1.5s ease-out;
+    /* animation-delay: 0.4s; */
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    animation-delay: 0.8s;
+}
+
+.animaz-davide13 {
+    -webkit-animation: top-opacity 1.5s ease-out;
+    -moz-animation: top-opacity 1.5s ease-out;
+    -o-animation: top-opacity 1.5s ease-out;
+    animation: top-opacity 1.5s ease-out;
+    /* animation-delay: 0.4s; */
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    animation-delay: 0.3s;
+}
+
+.animaz-davide14 {
+    -webkit-animation: top-opacity 1.5s ease-out;
+    -moz-animation: top-opacity 1.5s ease-out;
+    -o-animation: top-opacity 1.5s ease-out;
+    animation: top-opacity 1.5s ease-out;
+    /* animation-delay: 0.4s; */
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    animation-delay: 0.6s;
+}
+
+.animaz-davide15 {
+    -webkit-animation: top-opacity 1.5s ease-out;
+    -moz-animation: top-opacity 1.5s ease-out;
+    -o-animation: top-opacity 1.5s ease-out;
+    animation: top-opacity 1.5s ease-out;
+    /* animation-delay: 0.4s; */
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    animation-delay: 0.9s;
+}
+
+
+
+
+@-webkit-keyframes top-opacity {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    1% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    50% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@-moz-keyframes top-opacity {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    1% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    50% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@-o-keyframes top-opacity {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    1% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    50% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes top-opacity {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    1% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    50% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*
+Animazione da sinistra verso destra con opacity che aumenta.
+Preapplicata sul primo articles
+Div a cui applicare: ogni singolo .articles eccetto l'ultimo articles, sign-up, contatti-divs
+*/
+
+.animaz-davide2 {
+    -webkit-animation: right-opacity 1s ease-out;
+    -moz-animation: right-opacity 1s ease-out;
+    -o-animation: right-opacity 1s ease-out;
+    animation: right-opacity 1s ease-out;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.animaz-davide21 {
+    -webkit-animation: right-opacity 1s ease-out;
+    -moz-animation: right-opacity 1s ease-out;
+    -o-animation: right-opacity 1s ease-out;
+    animation: right-opacity 1s ease-out;
+    animation-delay: 0.2s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.animaz-davide22 {
+    -webkit-animation: right-opacity 1s ease-out;
+    -moz-animation: right-opacity 1s ease-out;
+    -o-animation: right-opacity 1s ease-out;
+    animation: right-opacity 1s ease-out;
+    animation-delay: 0.4s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.animaz-davide23 {
+    -webkit-animation: right-opacity 1s ease-out;
+    -moz-animation: right-opacity 1s ease-out;
+    -o-animation: right-opacity 1s ease-out;
+    animation: right-opacity 1s ease-out;
+    animation-delay: 0.6s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.animaz-davide24 {
+    -webkit-animation: right-opacity 1s ease-out;
+    -moz-animation: right-opacity 1s ease-out;
+    -o-animation: right-opacity 1s ease-out;
+    animation: right-opacity 1s ease-out;
+    animation-delay: 0.8s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+
+@-moz-keyframes right-opacity {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    1% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    50% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@-o-keyframes right-opacity {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    1% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    50% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@-webkit-keyframes right-opacity {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    1% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    50% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes right-opacity {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    1% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    50% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* 
+Animazione da piccolo a grande con rimbalzo
+Preapplicata sul primo bottone
+Div a cui applicare: bottone, bottone2, bottone3
+ */
+
+.animaz-davide3 {
+    -webkit-animation: bounce 1s ease-out;
+    -moz-animation: bounce 1s ease-out;
+    -o-animation: bounce 1s ease-out;
+    animation: bounce 1s ease-out;
+    -webkit-transform-origin: 50% 25%;
+    -moz-transform-origin: 50% 25%;
+    -o-transform-origin: 50% 25%;
+    -ms-transform-origin: 50% 25%;
+    transform-origin: 50% 25%;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.animaz-davide31 {
+    -webkit-animation: bounce 1s ease-out;
+    -moz-animation: bounce 1s ease-out;
+    -o-animation: bounce 1s ease-out;
+    animation: bounce 1s ease-out;
+    -webkit-transform-origin: 50% 25%;
+    -moz-transform-origin: 50% 25%;
+    -o-transform-origin: 50% 25%;
+    -ms-transform-origin: 50% 25%;
+    transform-origin: 50% 25%;
+    animation-delay: 1.2s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes bounce {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    1% {
+        opacity: 1;
+        transform: scale(0);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(0);
+    }
+
+    70% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+
+    80% {
+        opacity: 1;
+        transform: scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@-moz-keyframes bounce {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    1% {
+        opacity: 1;
+        transform: scale(0);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(0);
+    }
+
+    70% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+
+    80% {
+        opacity: 1;
+        transform: scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transfor: scale(1);
+    }
+}
+
+@-o-keyframes bounce {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    1% {
+        opacity: 1;
+        transform: scale(0);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(0);
+    }
+
+    70% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+
+    80% {
+        opacity: 1;
+        transform: scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transfor: scale(1);
+    }
+}
+
+@keyframes bounce {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    1% {
+        opacity: 1;
+        transform: scale(0);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(0);
+    }
+
+    70% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+
+    80% {
+        opacity: 1;
+        transform: scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transfor: scale(1);
+    }
+}
+
+/*
+Animazione dall'alto verso il basso con opacity che aumenta.
+Preapplicata sul primo dati-news
+Div a cui applicare: ogni singolo .dati-news
+*/
+
+.animaz-davide4 {
+    -webkit-animation: down-opacity 1s ease-out;
+    -moz-animation: down-opacity 1s ease-out;
+    -o-animation: down-opacity 1s ease-out;
+    animation: down-opacity 1s ease-out;
+}
+
+@-moz-keyframes down-opacity {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    1% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    50% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    60% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@-o-keyframes down-opacity {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    1% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    50% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    60% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes down-opacity {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    1% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    50% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    60% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes down-opacity {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    1% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    50% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    60% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 
+Animazione border nav - NON FUNZIONA
+*/
+
+/* .sandra .sandra2 .brie .speck {
+    -webkit-animation: border-bottom 1s ease-in-out;
+    -moz-animation: border-bottom 1s ease-in-out;
+    -o-animation: border-bottom 1s ease-in-out;
+    animation: border-bottom 1s ease-in-out;
+}
+
+@-webkit-keyframes borderbottom {
+    0% {
+        transform: scaleX(0);
+    }
+
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+@-moz-keyframes borderbottom {
+    0% {
+        transform: scaleX(0);
+    }
+
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+@-o-keyframes borderbottom {
+    0% {
+        transform: scaleX(0);
+    }
+
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes borderbottom {
+    0% {
+        transform: scaleX(0);
+    }
+
+    100% {
+        transform: scaleX(1);
+    }
+} */
+
+
+/*
+.nomeClasse {
+    -webkit-animation: nomeAnimazione 1s ease-out;
+    -moz-animation: nomeAnimazione 1s ease-out;
+    -o-animation: nomeAnimazione 1s ease-out;
+    animation: nomeAnimazione 1s ease-out;
+}
+
+@-webkit-keyframes nomeAnimazione {}
+
+@-moz-keyframes nomeAnimazione {}
+
+@-o-keyframes nomeAnimazione {}
+
+@keyframes nomeAnimazione {}
+*/

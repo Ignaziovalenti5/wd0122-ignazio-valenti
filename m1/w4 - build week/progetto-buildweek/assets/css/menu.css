@@ -1,0 +1,198 @@
+#menu {
+    z-index: 1;
+    background-color: white;
+    /* padding-bottom: 250px;
+} */
+}
+
+#menu-prezzi {
+    margin-left: 130px;
+    margin-right: 130px;
+    padding-bottom: 100px;
+}
+
+#menu-prezzi button {
+    padding: 30px 80px;
+    background-color: white;
+    border: 1px solid orangered;
+    color: orangered;
+    float: right;
+    transition: 0.3s;
+}
+
+#menu-prezzi button:hover {
+    background-color: orangered;
+    color: white;
+    cursor: pointer;
+}
+
+/* #menu-prezzi #more-info-button:hover {
+    background-color: orangered;
+    color: white;
+    cursor: pointer;
+} */
+
+#menu-titolo h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.7rem;
+
+    color: black;
+    /* padding-top: 14vh;
+    padding-bottom: 8vh; */
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.hrhr {
+    width: 150px;
+    color: rgb(177, 173, 173);
+    margin-bottom: 40px;
+    border: 0.5px solid;
+    text-align: center;
+
+}
+
+
+#menu-titolo span {
+    font-size: 2.3rem;
+    color: rgb(255, 60, 0);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#menu-titolo p {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: grey;
+    text-align: center;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    line-height: 1.5rem;
+    padding-bottom: 100px;
+}
+
+#menu-prezzi-titolo h2 {
+    font-size: 1.2rem;
+    font-weight: bolder;
+    margin-bottom: 40px;
+}
+
+#menu-titolo-span {
+    color: rgb(255, 60, 0);
+}
+
+.pietanza {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.pietanza h2 {
+    font-size: 1.3rem;
+    display: inline-block;
+    position: relative;
+    border-bottom: none;
+    background: white;
+    margin: 0;
+    white-space: nowrap;
+}
+
+
+
+.pietanza p {
+    margin-right: 90px;
+    font-size: 0.65rem;
+    font-weight: 500;
+    color: grey;
+    padding-top: 30px;
+    padding-bottom: 35px;
+    line-height: 1.8em;
+
+}
+
+.item {
+    display: block;
+}
+
+
+.row {
+    display: flex;
+}
+
+
+.pietanza span {
+    color: #938463;
+    float: right;
+    width: 100%;
+    font-size: 1rem;
+    margin: 0;
+    border-bottom: 0.7px dotted grey;
+    text-align: right;
+    padding-bottom: 5px;
+}
+
+#spazio-foto-button {
+    display: none;
+}
+
+/* #separazione-due {
+    margin-top: 7vh;
+} */
+
+/* #menu {
+    height: 720px;
+} */
+
+#menu-titolo {
+    opacity: 0;
+}
+
+#menu-prezzi #menu-prezzi-titolo {
+    opacity: 0;
+}
+
+#tutte-pietanze {
+    opacity: 0;
+}
+
+.bottone2 {
+    opacity: 0;
+}
+
+@media screen and (max-width: 768px) {
+    #menu-prezzi {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .pietanza span {
+        border: none;
+        text-align: left;
+        margin-top: 15px;
+        font-size: 16px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .pietanza p {
+        width: 100%;
+        font-size: 11px;
+        font-weight: normal;
+
+    }
+
+    /* #spazio-foto-button {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    } */
+
+    #menu-titolo p {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+
+}

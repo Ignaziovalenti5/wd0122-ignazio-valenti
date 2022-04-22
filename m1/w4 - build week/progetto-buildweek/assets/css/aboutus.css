@@ -1,0 +1,76 @@
+.pabout {
+    line-height: 30px;
+    text-align: center;
+    color: grey;
+    font-weight: bold;
+    margin-top: 30px;
+    font-size: 12px;
+    padding-left: 300px;
+    padding-right: 300px;
+    font-weight: 400;
+}
+
+.about-us {
+    height: 600px;
+    background-color: rgb(244, 244, 244);
+    text-align: center;
+    margin-bottom: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 60px;
+}
+
+.titoloabout {
+    font-size: 1.8rem;
+    font-weight: bolder;
+    color: rgb(71, 71, 71);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 50px;
+}
+
+.imgabout {
+    margin-top: 50px;
+}
+
+.titoloabout,
+.imgabout,
+.pabout {
+    opacity: 0;
+}
+
+.orangeabout {
+    color: orangered;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.about-us hr {
+    width: 100px;
+    border-top: 1px solid gray;
+}
+
+@media screen and (max-width: 1200px) {
+    .pabout {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .about-us {
+        height: 600px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-us {
+        height: 660px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .about-us {
+        height: 680px;
+    }
+}
