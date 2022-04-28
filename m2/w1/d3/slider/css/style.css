@@ -1,0 +1,83 @@
+
+.main {
+    width: 370px;
+    height: 200px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 500px;
+    perspective-origin: 50%;
+}
+
+.image-cube {
+    width: 300px;
+    height: 200px;
+    transform-style: preserve-3d;
+    position: relative;
+    transition: 1s;
+}
+
+.image-cube div {
+    width: 300px;
+    position: absolute;
+}
+
+img {
+    width: 100%;
+    transform: translateZ(0);
+    border-radius: 5px;
+}
+
+.front {
+    transform: translateZ(150px);
+}
+
+.right {
+    transform: rotateY(-270deg) translateX(150px);
+    transform-origin: 100% 0;
+}
+
+.back {
+    transform: translateZ(-150px) rotateY(180deg);
+}
+
+.left {
+    transform: rotateY(270deg) translateX(-150px);
+    transform-origin: 0 50%;
+}
+
+.btns {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btns button {
+    background-color: #9ee4e4;
+    padding: 8px 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 0 5px #000;
+}
+
+.btns button:hover{
+    background-color: #00ffff;
+    transform: scale(1.1);
+}
+
+.btns i{
+    font-size: 20px;
+}

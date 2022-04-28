@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Statements</h1>
+<h2>if...else</h2>
+
+<p>Mostra un saluto in base all'orario (<em>ottengo l'orario con il metodo dedicato dell'oggetto Date</em>):</p>
+
+<p id="demo"></p>
+
+<script>
+    const time = new Date().getHours();
+    let greeting;
+    if (time < 14) {
+      greeting = "Buon mattino";
+    } else if (time < 20) {
+      greeting = "Buon pomeriggio";
+    } else {
+      greeting = "Buona sera";
+    }
+    document.getElementById("demo").innerHTML = greeting;
+    </script>
+
+</body>
+</html>
