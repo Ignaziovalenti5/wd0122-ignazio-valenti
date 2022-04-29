@@ -38,6 +38,7 @@ function shuffle(a) {
 // una funzione che rimuove la classe active e chiama la funzione startGame()
 function playAgain(){
     modal.classList.remove("active");
+    iconsFind = []
     startGame();
 }
 
