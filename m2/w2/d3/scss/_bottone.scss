@@ -1,0 +1,29 @@
+.btn{
+    padding: 15px 20px;
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+    text-decoration: none;
+    &:hover{
+        background-color: #fff;
+        transform: scale(0.92);
+    }
+}
+
+.btn-primary{
+    background-color: $primary-color;
+    
+    &:hover{
+        color: $primary-color;
+        box-shadow: 0 0 5px $primary-color;
+    }
+}
+
+.btn-secondary{
+    background-color: $secondary-color;
+
+    &:hover{
+        color: $primary-color;
+        box-shadow: 0 0 5px $secondary-color;
+    }
+}

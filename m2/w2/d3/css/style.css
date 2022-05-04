@@ -1,0 +1,64 @@
+.btn {
+  padding: 15px 20px;
+  border-radius: 5px;
+  color: #fff;
+  border: none;
+  text-decoration: none; }
+  .btn:hover {
+    background-color: #fff;
+    transform: scale(0.92); }
+
+.btn-primary {
+  background-color: #3f3fff; }
+  .btn-primary:hover {
+    color: #3f3fff;
+    box-shadow: 0 0 5px #3f3fff; }
+
+.btn-secondary {
+  background-color: #fc8f3c; }
+  .btn-secondary:hover {
+    color: #3f3fff;
+    box-shadow: 0 0 5px #fc8f3c; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+header {
+  font-family: 'Poppins', sans-serif;
+  background-color: #853fff;
+  padding: 0 10px; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 0 5px; }
+  nav .logo {
+    font-weight: 400; }
+  nav ul {
+    display: flex;
+    flex-direction: row; }
+    nav ul li {
+      padding-left: 30px;
+      list-style: none; }
+      nav ul li a {
+        color: #fff;
+        text-decoration: none; }
+
+.showcase-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 40px; }
+  .showcase-content div {
+    padding-right: 20px; }
+    .showcase-content div h1 {
+      font-size: 3.5em;
+      font-weight: 400;
+      margin-bottom: -10px; }
