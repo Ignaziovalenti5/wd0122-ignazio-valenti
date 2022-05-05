@@ -1,0 +1,51 @@
+// IMPORT ****************************************
+
+@import 'variables';
+@import 'header';
+
+
+// GENERAL STYLES ********************************
+
+body{
+    font-family: 'Poppins', sans-serif;
+
+}
+
+#main{
+    max-width: 901px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    
+    #content{
+        flex-basis: 75%;
+
+        a{
+            text-decoration: none;
+            color: $sec-color;
+            font-style: italic;
+        }
+    }
+}
+
+.warning-button{
+    background-color: $sec-color;
+    border: outset;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+#footer{
+    height: 100px;
+    background-color: $bg-footer;
+}
+
+#sidebar{
+    flex-basis: 25%;
+
+    ul li{
+    border-bottom: 1px dashed #808080;
+    list-style: none;
+    padding: 10px;
+    }
+}
