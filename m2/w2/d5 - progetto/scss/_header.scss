@@ -1,0 +1,99 @@
+
+#social{
+    background-image: url(../img/bg-cover.png);
+    position: relative;
+
+    .nav-item{
+        z-index: 5;
+    }
+
+    .nav-link{
+        color: #fff;
+    }
+
+    &::before{
+        @include bg-gradient;
+        background-position: center;
+    }
+
+}
+
+.navbar{
+    box-shadow: 0 2px 5px #7e7e7e;
+    z-index: 1000;
+}
+
+.navbar-nav .nav-item{
+    padding-right: 20px;
+}
+
+.navbar-brand{
+    font-size: 2em;
+    font-weight: 900;
+    position: relative;
+    
+    span{
+        color: $sec-color;
+        position: absolute;
+        font-size: 3em;
+        top: -60px;
+        left: -12px;
+    }
+}
+
+#principal{
+    width: 100%;
+    height: 500px;
+    align-items: center;
+    background-image: url(../img/bg-cover.png);
+    position: relative;
+    overflow: hidden;
+
+    &::before{
+        @include bg-gradient;
+        transform: rotate(-2.5deg) scale(1.1);
+        transform-origin: bottom left;
+        box-shadow: 0 2px 3px #484848;
+    }
+
+   
+    div{
+        z-index: 5;
+        padding: 50px;
+
+        h1{
+            font-weight: 700;
+        }   
+
+        p{
+            font-weight: 300;
+            padding-right: 50px;
+            color: #484848;
+        }
+
+        .btn{
+            padding: 15px 25px;
+            &:hover{
+                transform: translateY(-2px);
+            }
+        }
+        
+        .btn-primary{
+            background-color: $prim-color;
+            border-color: $prim-color;
+            &:hover{
+                background-color: #fff;
+                color: $prim-color;
+            }
+        }
+
+        .btn-secondary{
+            border-color: $prim-color;
+            &:hover{
+                background-color: #fff !important;
+                color: $prim-color;
+            }
+        }
+    }
+    
+}

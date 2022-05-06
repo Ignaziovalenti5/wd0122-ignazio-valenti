@@ -1,0 +1,16 @@
+
+@function set-color($colore){
+    @if(lightness($colore) >= 50){
+        @return #000;
+    }@else{
+        @return #fff;
+    }
+}
+
+@function set-color-pro($sfondo,$colore){
+    @if(lightness($sfondo) >= 50){
+        @return darken($colore,30%);
+    }@else{
+        @return lighten($colore,30%);
+    }
+}
