@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+    <div class="container">
+
+        <h1>Users List</h1>
+
+        <table id="users-table">
+            <thead>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>E-mail</th>
+            </thead>
+        </table>
+
+        <button id="card-btn" class="btn btn-primary mt-3">Load Cards</button>
+        <button id="card-btn-close" class="btn btn-primary mt-3 d-none">Close Cards</button>
+
+        <div class="container d-flex row mt-3 p-3 justify-content-evenly" id="cards-container"></div>
+        
+    </div>
+    
+    <script src="js/script.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+
+</html>
