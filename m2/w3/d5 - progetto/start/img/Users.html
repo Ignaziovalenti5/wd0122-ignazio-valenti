@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+    <link rel="stylesheet" href="./Users_files/style.css">
+    <link rel="stylesheet" href="./Users_files/sweetalert2.min.css">
+    <link rel="stylesheet" href="./Users_files/bootstrap.min.css">
+</head>
+
+<body class="" style="">
+    
+    <h1>Utenti</h1>
+
+    
+<!-- 
+Button trigger modal
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button> -->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button id="cancella" type="button" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+    <script src="./Users_files/sweetalert2.min.js"></script>
+    <script src="./Users_files/bootstrap.bundle.min.js"></script>
+    <script src="./Users_files/script.js"></script><table><tr><th>ID</th><th>Nome</th><th>Username</th><th>Email</th><button>Add user</button></tr><tr><td>1</td><td>Leanne Graham</td><td>Bret</td><td>Sincere@april.biz</td><td><button>View</button><button>Edit</button><button data-bs-toggle="modal" data-bs-target="#exampleModal" data-id="1">Delete</button></td></tr><tr><td>2</td><td>Ervin Howell</td><td>Antonette</td><td>Shanna@melissa.tv</td><td><button>View</button><button>Edit</button><button data-bs-toggle="modal" data-bs-target="#exampleModal" data-id="2">Delete</button></td></tr><tr><td>3</td><td>Clementine Bauch</td><td>Samantha</td><td>Nathan@yesenia.net</td><td><button>View</button><button>Edit</button><button data-bs-toggle="modal" data-bs-target="#exampleModal" data-id="3">Delete</button></td></tr><tr><td>4</td><td>Patricia Lebsack</td><td>Karianne</td><td>Julianne.OConner@kory.org</td><td><button>View</button><button>Edit</button><button data-bs-toggle="modal" data-bs-target="#exampleModal" data-id="4">Delete</button></td></tr><tr><td>5</td><td>Chelsey Dietrich</td><td>Kamren</td><td>Lucio_Hettinger@annie.ca</td><td><button>View</button><button>Edit</button><button data-bs-toggle="modal" data-bs-target="#exampleModal" data-id="5">Delete</button></td></tr><tr><td>6</td><td>Mrs. Dennis Schulist</td><td>Leopoldo_Corkery</td><td>Karley_Dach@jasper.info</td><td><button>View</button><button>Edit</button><button data-bs-toggle="modal" data-bs-target="#exampleModal" data-id="6">Delete</button></td></tr><tr><td>7</td><td>Kurtis Weissnat</td><td>Elwyn.Skiles</td><td>Telly.Hoeger@billy.biz</td><td><button>View</button><button>Edit</button><button data-bs-toggle="modal" data-bs-target="#exampleModal" data-id="7">Delete</button></td></tr><tr><td>8</td><td>Nicholas Runolfsdottir V</td><td>Maxime_Nienow</td><td>Sherwood@rosamond.me</td><td><button>View</button><button>Edit</button><button data-bs-toggle="modal" data-bs-target="#exampleModal" data-id="8">Delete</button></td></tr><tr><td>9</td><td>Glenna Reichert</td><td>Delphine</td><td>Chaim_McDermott@dana.io</td><td><button>View</button><button>Edit</button><button data-bs-toggle="modal" data-bs-target="#exampleModal" data-id="9">Delete</button></td></tr><tr><td>10</td><td>Clementina DuBuque</td><td>Moriah.Stanton</td><td>Rey.Padberg@karina.biz</td><td><button>View</button><button>Edit</button><button data-bs-toggle="modal" data-bs-target="#exampleModal" data-id="10">Delete</button></td></tr></table>
+
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
