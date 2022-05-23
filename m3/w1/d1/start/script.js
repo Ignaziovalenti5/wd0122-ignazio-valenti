@@ -10,7 +10,11 @@ button.addEventListener('click', function (e) {
     targetRandom.innerText = String(casualNumber);
     var condition1 = Math.abs((casualNumber - Number(input1.value)));
     var condition2 = Math.abs((casualNumber - Number(input2.value)));
-    if (condition1 < condition2 && condition1 == 0) {
+    if (input1.value == input2.value) {
+        result.innerText = 'Pari!';
+        resultDesc.innerText = 'Entrambi i giocatori hanno scelto lo stesso numero!';
+    }
+    if (condition1 == 0) {
         result.innerText = 'Giocatore 1';
         resultDesc.innerText = 'Il giocatore 1 ha azzeccato il numero!';
     }
@@ -18,7 +22,7 @@ button.addEventListener('click', function (e) {
         result.innerText = 'Giocatore 1';
         resultDesc.innerText = 'Nessuno dei due ha azzeccato il numero casuale, ma il giocatore 1 si è avvicinato di più!';
     }
-    if (condition1 > condition2 && condition2 == 0) {
+    if (condition2 == 0) {
         result.innerText = 'Giocatore 2';
         resultDesc.innerText = 'Il giocatore 2 ha azzeccato il numero!';
     }

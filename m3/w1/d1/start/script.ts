@@ -16,8 +16,13 @@ button!.addEventListener('click', function (e) {
 
     let condition1:number = Math.abs((casualNumber - Number(input1!.value)))
     let condition2:number = Math.abs((casualNumber - Number(input2!.value)))
+
+    if(input1!.value == input2!.value){
+        result!.innerText = 'Pari!'
+        resultDesc!.innerText = 'Entrambi i giocatori hanno scelto lo stesso numero!'
+    }
     
-    if (condition1 < condition2 && condition1 == 0) {
+    if (condition1 == 0) {
         result!.innerText = 'Giocatore 1'
         resultDesc!.innerText = 'Il giocatore 1 ha azzeccato il numero!'
     }else if(condition1 < condition2){
@@ -25,7 +30,7 @@ button!.addEventListener('click', function (e) {
         resultDesc!.innerText = 'Nessuno dei due ha azzeccato il numero casuale, ma il giocatore 1 si è avvicinato di più!'
     }
 
-    if (condition1 > condition2 && condition2 == 0) {
+    if (condition2 == 0) {
         result!.innerText = 'Giocatore 2'
         resultDesc!.innerText = 'Il giocatore 2 ha azzeccato il numero!'
     }else if(condition1 > condition2){
