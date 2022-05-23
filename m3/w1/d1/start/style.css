@@ -6,3 +6,15 @@
 h1, #result{
     color: #0062ff !important;
 }
+
+form{
+    height: 120px;
+}
+
+.result{
+    height: 150px;
+}
+
+.table{
+    text-align: center !important;
+}
