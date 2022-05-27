@@ -1,0 +1,200 @@
+
+.smartphone{
+    width: 330px;
+    height: 650px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border: 10px solid #000;
+    border-radius: 50px;
+    transition: all .3 ease;
+    box-shadow: 0 0 15px #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.filter-blur{
+    filter: blur(5px)
+}
+
+.img-bg{
+    background-image: url(../img/bg-2.png);
+    background-position: bottom;
+    background-size: cover;
+}
+
+#smartphone-parts-1{
+    margin-top: -1px;
+    position: absolute;
+    width: 150px;
+    height: 30px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    background-color: #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#speaker{
+    width: 40px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #363636;
+    margin-top: 9px;
+}
+
+#cam{
+    width: 8px;
+    height: 8px;
+    border: 1px solid #424242;
+    border-radius: 100%;
+    background-color: #000;
+    margin-top: 8px;
+    margin-left: 5px;
+}
+
+#time{
+    font-size: 3.5rem;
+    font-weight: 100;
+}
+
+#date{
+    font-size: .9em;
+    font-weight: 100;
+}
+
+#screen-saver{
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.unlock{
+    transition: all .3s ease;
+    cursor: pointer;
+    margin-top: -15px;
+}
+
+.unlock i{
+    font-size: 2.8em !important;
+}
+
+.unlock:hover{
+    color: #710000 !important;
+    transform: scale(1.05);
+    transform-origin: bottom;
+}
+
+#app-container{
+    width: 280px;
+    height: 200px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+#app-container p{
+    font-size: 10px;
+}
+
+#call{
+    width: 80px;
+    height: 80px;
+    align-items: flex-end;
+    margin: 240px auto;
+}
+
+#call p{
+    font-size: 10px;
+}
+
+.lock-smartphone{
+    padding-top: 50px;
+    padding-right: 20px;
+    text-align: right !important;
+    cursor: pointer;
+}
+
+.lock-smart{
+    margin-top: 20px;
+    color: #fff;
+    font-size: 25px !important;
+}
+
+.btn{
+    border: none !important;
+    border-radius: 25px !important;
+    padding-top: 15px !important;
+    text-align: center;
+    box-shadow: 0 0 10px #000;
+    transition: all .3s ease !important;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+}
+
+.btn-primary{
+    background-color: #5c46d8 !important;
+}
+.btn-warning{
+    background-color: #46ccd8 !important;
+}
+.btn-danger{
+    background-color: #aa46d8 !important;
+}
+
+.btn-close{
+    padding: 5px !important;
+    box-shadow: none;
+}
+
+#page-saldo{
+    position: absolute;
+    background-color: #fff;
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #000;
+    top: 25%;
+}
+
+.saldo-title{
+    margin-top: 25px;
+}
+
+.saldo{
+    font-weight: bold;
+    font-size: 2.2rem;
+}
+
+#page-ricarica{
+    position: absolute;
+    background-color: #fff;
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #000;
+    top: 25%;
+}
+
+.ricarica-title{
+    margin-top: 25px;
+}
+
+.ricarica{
+    font-weight: bold;
+    font-size: 2.2rem;
+}
+
+#btn-ricarica{
+    width: 100px;
+    height: 50px;
+    padding: 0 !important;
+    margin-right: 63px;
+    box-shadow: none;
+    border: none !important;
+}
+

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartphone</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="smartphone img-bg text-center">
+
+            <div id="smartphone-parts-1">
+                <div id="speaker"></div>
+                <div id="cam"></div>
+            </div>
+
+            <div class="lock-smartphone d-none col-12">
+                <i class="lock-smart bi bi-lock-fill"></i>
+            </div>
+
+            <!-- SCREEN SAVER ----------------------------->
+            <div id="screen-saver" class="container">
+
+                <div id="now" class="mt-5 text-white">
+                    <div class="fs-3">
+                        <i id="lock" class="bi bi-lock-fill"></i>
+                    </div>
+                    <div>
+                        <h2 id="time">00:00</h2>
+                    </div>
+                    
+                    <div>
+                        <h5 id="date">27/5/2022</h5>
+                    </div>
+                </div>
+                
+                <div id="unlock">
+                    <div>
+                        <p class="fw-light">Click on fingerprint to unlock</p>
+                    </div>
+                    <div class="unlock">
+                        <i class="bi bi-fingerprint"></i>
+                    </div>
+                </div>
+            
+            </div> 
+
+            <!-- FIRST PAGE ----------------------------->
+            <div id="first-page" class="container d-none">
+
+
+
+                <div id="app-container" class="row justufy-content-center">
+                    <div id="app-chiamate" class="col btn btn-primary m-2">
+                        <i class="bi bi-telephone-inbound"></i>
+                        <p>Chiamate</p>
+                    </div>
+                    <div id="app-ricarica" class="col btn btn-warning m-2">
+                        <i class="bi bi-cash-stack"></i>
+                        <p>Ricarica</p>
+                    </div>
+                    <div id="app-saldo" class="col btn btn-danger m-2">
+                        <i class="bi bi-wallet2"></i>
+                        <p>Saldo</p>
+                    </div>
+                </div>
+
+                <div id="call" class="row justufy-content-center">
+                    <div id="call-btn" class="col btn btn-success rounded-pill pt-3">
+                        <i class="bi bi-telephone-fill"></i>
+                        <p>Call</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- PAGE SALDO ----------------------------->
+
+            <div id="page-saldo" class="container d-none">
+
+                <div class="saldo-title text-end">
+                    <button class="btn btn-close mb-5"></button>
+                    <h3 class="title fw-light text-center"></h3>
+                    <h2 id="saldo" class="saldo text-center"></h2>
+                </div>
+
+            </div>
+
+            <!-- PAGE RICARICA ----------------------------->
+
+            <div id="page-ricarica" class="container d-none">
+
+                <div class="text-end">
+                    <button class="close-ricarica btn btn-close mt-2"></button>
+                    <h3 class="ricarica-title fw-light text-center">Ricarica da:</h3>
+                    <form id="ricarica" action="#">
+                        <input id="input-ricarica" type="number" max="50" min="5" class="form-control my-3" required>
+                        <button id="btn-ricarica" type="submit" class="btn btn-primary text-center">Ricarica</button>
+
+                    </form>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
