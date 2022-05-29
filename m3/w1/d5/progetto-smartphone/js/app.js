@@ -194,6 +194,7 @@ unlockBtn === null || unlockBtn === void 0 ? void 0 : unlockBtn.addEventListener
     appChiamate === null || appChiamate === void 0 ? void 0 : appChiamate.classList.remove('d-none');
     appRicarica === null || appRicarica === void 0 ? void 0 : appRicarica.classList.remove('d-none');
     appSaldo === null || appSaldo === void 0 ? void 0 : appSaldo.classList.remove('d-none');
+    callBtn === null || callBtn === void 0 ? void 0 : callBtn.classList.remove('d-none');
     setTimeout(() => {
         timeMini.classList.remove('d-none');
         dateMini.classList.remove('d-none');

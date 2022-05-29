@@ -92,6 +92,7 @@ unlockBtn?.addEventListener('click', function():void{
     appChiamate?.classList.remove('d-none')
     appRicarica?.classList.remove('d-none')
     appSaldo?.classList.remove('d-none')
+    callBtn?.classList.remove('d-none')
     
     setTimeout(() => {
         timeMini!.classList.remove('d-none')
