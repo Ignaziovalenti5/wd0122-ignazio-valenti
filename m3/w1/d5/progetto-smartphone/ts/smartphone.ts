@@ -253,7 +253,6 @@ appRicarica?.addEventListener('click', () => {
 
 
 
-
 // ---------------------------------------------
 // CALL BUTTON ---------------------------------------------------
 
@@ -308,7 +307,6 @@ function call(): void {
         recentCalls?.prepend(callerDiv)
         
     }
-
 
 }
 
