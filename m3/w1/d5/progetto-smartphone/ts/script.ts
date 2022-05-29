@@ -177,8 +177,5 @@ console.log('----------------------------------------');
 let user = new firstUser(5)
 
 let random:number = Math.floor((Math.random()*10)+1)
-// let costo = user.chiamata(random)
-// user.chiamata(random)
-// user.chiamata(random)
-// console.log(user.carica)
+
 

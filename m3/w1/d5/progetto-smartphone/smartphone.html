@@ -19,8 +19,16 @@
                 <div id="cam"></div>
             </div>
 
-            <div class="lock-smartphone d-none col-12">
+            <div class="lock-smartphone d-none">
                 <i class="lock-smart bi bi-lock-fill"></i>
+            </div>
+
+            <div id="time-mini" class="d-none">
+                <p id="p-time" class="fw-light"></p>
+            </div>
+
+            <div id="date-mini" class="d-none">
+                <p id="p-date" class="fw-light"></p>
             </div>
 
             <!-- SCREEN SAVER ----------------------------->
@@ -31,11 +39,11 @@
                         <i id="lock" class="bi bi-lock-fill"></i>
                     </div>
                     <div>
-                        <h2 id="time">00:00</h2>
+                        <h2 id="time"></h2>
                     </div>
                     
                     <div>
-                        <h5 id="date">27/5/2022</h5>
+                        <h5 id="date"></h5>
                     </div>
                 </div>
                 
@@ -99,10 +107,34 @@
                     <button class="close-ricarica btn btn-close mt-2"></button>
                     <h3 class="ricarica-title fw-light text-center">Ricarica da:</h3>
                     <form id="ricarica" action="#">
-                        <input id="input-ricarica" type="number" max="50" min="5" class="form-control my-3" required>
+                        <select id="select-ricarica" class="form-select my-3">
+                            <option class="text-center" value="5">5 €</option>
+                            <option class="text-center" value="10">10 €</option>
+                            <option class="text-center" value="20">20 €</option>
+                            <option class="text-center" value="50">50 €</option>
+                        </select>
                         <button id="btn-ricarica" type="submit" class="btn btn-primary text-center">Ricarica</button>
 
                     </form>
+                </div>
+
+            </div>
+
+            <!-- PAGE CHIAMATE ----------------------------->
+
+            <div id="page-chiamate" class="container d-none">
+
+                <div class="text-start">
+                    <button class="close-chiamate btn-close btn-close-white mb-2"></button>
+                    <h2 class="chiamate-title fw-light"></h2>
+                    <h3 class="fw-light pt-4 pb-3">Chiamate recenti:</h3>
+                    
+                    <div class="recent-calls"></div>
+
+                    <div class="text-center">
+                        <button id="azzera" class="btn btn-primary mt-3 pb-3">Azzera</button>
+                    </div>
+                    
                 </div>
 
             </div>

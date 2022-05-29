@@ -2,11 +2,19 @@
 // ---------------------------------------------
 // GLOBAL VARIABLES ----------------------------------------------
 
+let smartphone:HTMLElement|null = document.querySelector('.smartphone')
 let screenSaver:HTMLElement|null = document.querySelector('#screen-saver')
 let lockSmartphone:HTMLElement|null = document.querySelector('.lock-smartphone')
 let firstPage:HTMLElement|null = document.querySelector('#first-page')
 let pageSaldo:HTMLElement|null = document.querySelector('#page-saldo')
 let pageRicarica:HTMLElement|null = document.querySelector('#page-ricarica')
+let pageChiamate:HTMLElement|null = document.querySelector('#page-chiamate')
+let recentCalls:HTMLElement|null = document.querySelector('.recent-calls')
+let azzeraBtn:HTMLButtonElement|null = document.querySelector('#azzera')
+
+
+let timeMini:HTMLElement|null = document.querySelector('#time-mini')
+let dateMini:HTMLElement|null = document.querySelector('#date-mini')
 
 let appChiamate:HTMLElement|null = document.querySelector('#app-chiamate')
 let appRicarica:HTMLElement|null = document.querySelector('#app-ricarica')
@@ -14,35 +22,56 @@ let appSaldo:HTMLElement|null = document.querySelector('#app-saldo')
 
 let callBtn:HTMLElement|null = document.querySelector('#call')
 
+let contatti:string[] = [
+    "Leanne Graham",
+    "Ervin Howell",
+    "Clementine Bauch",
+    "Patricia Lebsack",
+    "Chelsey Dietrich",
+    "Dennis Schulist",
+    "Kurtis Weissnat",
+    "Nicholas Runolf",
+    "Glenna Reichert",
+    "Clementina DuBuque"
+]
+
+
+
 
 // ---------------------------------------------
 // TIME & DATE SETUP ----------------------------------------------
 
+function setTime(_date:string, _time:string):void{
+
+    let targetDate:HTMLElement|null = document.querySelector(_date);
+    let targetTime:HTMLElement|null = document.querySelector(_time);
+
+    let now:string = new Date().toLocaleString('it-IT');
+    let date:string = ''
+    let time:string = ''
+    
+    if(now.length == 19){
+        date = now.slice(0,9);
+        time = now.slice(11, 16);
+    }else if(now.length == 20){
+        date = now.slice(0,10);
+        time = now.slice(12, 17);
+    }
+    
+    targetDate!.innerText = date;
+    targetTime!.innerText = time;
+
+}
+
 setInterval(() => {
 
-    function setTime(_date:string, _time:string):void{
-
-        let targetDate:HTMLElement|null = document.querySelector(_date);
-        let targetTime:HTMLElement|null = document.querySelector(_time);
-    
-        let now:string = new Date().toLocaleString('it-IT');
-        let date;
-        let time;
-        
-        if(now.length == 19){
-            date = now.slice(0,9);
-            time = now.slice(11, 16);
-        }else if(now.length == 20){
-            date = now.slice(0,10);
-            time = now.slice(12, 17);
-        }
-        
-        targetDate!.innerText = String(date);
-        targetTime!.innerText = String(time);
-
-    }
-
     setTime('#date', '#time')
+    
+}, 1000)
+
+setInterval(() => {
+
+    setTime('#p-date', '#p-time')
     
 }, 1000)
 
@@ -55,13 +84,18 @@ setInterval(() => {
 let unlockBtn:HTMLButtonElement|null = document.querySelector('.unlock')
 let lock:Element|null = document.querySelector('#lock')
 
-unlockBtn?.addEventListener('click', function(){
-    
+unlockBtn?.addEventListener('click', function():void{
     
     lock!.classList.remove('bi-lock-fill')
     lock!.classList.add('bi-unlock-fill')
+
+    appChiamate?.classList.remove('d-none')
+    appRicarica?.classList.remove('d-none')
+    appSaldo?.classList.remove('d-none')
     
     setTimeout(() => {
+        timeMini!.classList.remove('d-none')
+        dateMini!.classList.remove('d-none')
         
         lockSmartphone?.classList.remove('d-none')
         firstPage!.classList.remove('d-none')
@@ -76,9 +110,13 @@ unlockBtn?.addEventListener('click', function(){
 // ---------------------------------------------
 // LOCK BUTTON ---------------------------------------------------
 
-lockSmartphone?.addEventListener('click', function(){
+lockSmartphone?.addEventListener('click', function lockSmart():void {
 
     lockSmartphone?.classList.add('d-none')
+    smartphone?.classList.add('img-bg')
+
+    timeMini!.classList.add('d-none')
+    dateMini!.classList.add('d-none')
     
     lock!.classList.add('bi-lock-fill')
     lock!.classList.remove('bi-unlock-fill')
@@ -88,6 +126,7 @@ lockSmartphone?.addEventListener('click', function(){
     firstPage!.classList.remove('filter-blur')
     pageSaldo!.classList.add('d-none')
     pageRicarica!.classList.add('d-none')
+    pageChiamate!.classList.add('d-none')
 
 })
 
@@ -96,14 +135,16 @@ lockSmartphone?.addEventListener('click', function(){
 // ---------------------------------------------
 // APP SALDO ---------------------------------------------------
 
-appSaldo?.addEventListener('click', function(){
+appSaldo?.addEventListener('click', function(): void {
+    callBtn?.removeEventListener('click', call)
+
     pageSaldo?.classList.remove('d-none')
     firstPage?.classList.add('filter-blur')
     
     let closeBtn:HTMLElement|null = document.querySelector('.btn-close')
     
-    closeBtn?.addEventListener('click', function(){
-        
+    closeBtn?.addEventListener('click', function(): void {
+        callBtn?.addEventListener('click', call)
         pageSaldo!.classList.add('d-none')
         firstPage?.classList.remove('filter-blur')
     
@@ -121,24 +162,40 @@ appSaldo?.addEventListener('click', function(){
 // ---------------------------------------------
 // APP CHIAMATE ---------------------------------------------------
 
-appChiamate?.addEventListener('click', function(){
-    pageSaldo?.classList.remove('d-none')
-    firstPage?.classList.add('filter-blur')
-    let title:HTMLElement|null = document.querySelector('.title')
-    let closeBtn:HTMLElement|null = document.querySelector('.btn-close')
+appChiamate?.addEventListener('click', function(): void {
+
+    pageChiamate?.classList.remove('d-none')
+
+    smartphone?.classList.remove('img-bg')
+    smartphone?.classList.add('bg-dark')
+
+    appChiamate?.classList.add('d-none')
+    appRicarica?.classList.add('d-none')
+    appSaldo?.classList.add('d-none')
+    callBtn?.classList.add('d-none')
+
+    let callTitle:HTMLElement|null = document.querySelector('.chiamate-title')
+    callTitle!.innerText = `N° chiamate effettuate: ${user.numeroChiamate}`
+
+    let closeBtn:HTMLElement|null = document.querySelector('.close-chiamate')
     
-    closeBtn?.addEventListener('click', function(){
-        
-        pageSaldo!.classList.add('d-none')
-        firstPage?.classList.remove('filter-blur')
-    
+    closeBtn?.addEventListener('click', function(): void {
+        smartphone?.classList.add('img-bg')
+        smartphone?.classList.remove('bg-dark')
+        appChiamate?.classList.remove('d-none')
+        appRicarica?.classList.remove('d-none')
+        appSaldo?.classList.remove('d-none')
+        callBtn?.classList.remove('d-none')
+        pageChiamate?.classList.add('d-none')
+            
     })
 
-    let saldoText:HTMLElement|null = document.querySelector('#saldo')
-    
-    title!.innerText = ''
-    title!.innerText = `N° chiamate effettuate: ${user.numeroChiamate}`
-    saldoText!.innerText = ''
+    azzeraBtn?.addEventListener('click', function(){
+        user.azzeraChiamate()
+        recentCalls!.innerHTML = ''
+        callTitle!.innerText = `N° chiamate effettuate: ${user.numeroChiamate}`
+    })
+
 
 })
 
@@ -149,10 +206,10 @@ appChiamate?.addEventListener('click', function(){
 
 
 appRicarica?.addEventListener('click', () => {
-    
-    let inputRicarica:HTMLInputElement|null = document.querySelector('#input-ricarica')
-    inputRicarica?.classList.remove('d-none')
-    inputRicarica!.value = ''
+    callBtn?.removeEventListener('click', call)
+
+    let selectRicarica:HTMLSelectElement|null = document.querySelector('#select-ricarica')
+    selectRicarica?.classList.remove('d-none')
 
     let ricaricaBtn:HTMLButtonElement|null = document.querySelector('#ricarica')
     ricaricaBtn?.classList.remove('d-none')
@@ -165,28 +222,23 @@ appRicarica?.addEventListener('click', () => {
     ricaricaTitle!.innerText = 'Ricarica da:'
 
     
-    closeBtn?.addEventListener('click', function(){
-        
+    closeBtn?.addEventListener('click', function(): void {
+        callBtn?.addEventListener('click', call)
         pageRicarica!.classList.add('d-none')
         firstPage?.classList.remove('filter-blur')
     
     })
 
-    ricaricaBtn?.addEventListener('submit', function ricarica(){
+    ricaricaBtn?.addEventListener('submit', function ricarica(): void {
         ricaricaBtn?.removeEventListener('submit', ricarica)
 
-        let inputRicarica:HTMLInputElement|null = document.querySelector('#input-ricarica')
-        
-        let valoreRicarica = Number(inputRicarica!.value)
-
-        console.log(valoreRicarica);
+        let valoreRicarica:number = Number(selectRicarica!.value)
         
         user.ricarica(valoreRicarica)
 
         ricaricaTitle!.innerText = 'Hai effettuato una ricarica da: ' + valoreRicarica + ' €'
-        inputRicarica?.classList.add('d-none')
+        selectRicarica?.classList.add('d-none')
         ricaricaBtn?.classList.add('d-none')
-
 
     })
 
@@ -199,15 +251,20 @@ appRicarica?.addEventListener('click', () => {
 // ---------------------------------------------
 // CALL BUTTON ---------------------------------------------------
 
-callBtn?.addEventListener('click', function(){
-
+function call(): void {
+    callBtn?.removeEventListener('click', call)
     pageSaldo?.classList.remove('d-none')
     firstPage?.classList.add('filter-blur')
+
+    let randomNum2:number = Math.floor((Math.random()*10))
+    let randomContact = contatti[randomNum2]
+    let nameCallerElement:HTMLHeadingElement = document.createElement('h1')
+    nameCallerElement!.innerText = randomContact
     
     let closeBtn:HTMLElement|null = document.querySelector('.btn-close')
     
-    closeBtn?.addEventListener('click', function(){
-        
+    closeBtn?.addEventListener('click', function(): void {
+        callBtn?.addEventListener('click', call)
         pageSaldo!.classList.add('d-none')
         firstPage?.classList.remove('filter-blur')
     
@@ -228,15 +285,42 @@ callBtn?.addEventListener('click', function(){
     }else{
         title!.innerText = ''
         title!.innerText = 'Chiamata...'
+        title?.append(nameCallerElement)
         saldoText!.innerHTML = ''
-        saldoText!.innerHTML = `Durata: ${random} minuti <br> Costo chiamata: ${costo} € <br> Saldo Attuale: ${user.numero404()}`
+        saldoText!.innerHTML = `Durata: ${random} minuti`
+
+        let callerDiv:HTMLDivElement|null = document.createElement('div')
+        callerDiv.classList.add('caller')
+        let pTime:HTMLParagraphElement|null = document.createElement('p')
+        pTime!.innerText = timeMini!.innerText
+        let pContact:HTMLParagraphElement|null = document.createElement('p')
+        pContact.innerText = randomContact
+        let pMinutes:HTMLParagraphElement|null = document.createElement('p')
+        pMinutes.innerText = random + ' min'
+
+        callerDiv.append(pTime, pContact, pMinutes)
+        recentCalls?.prepend(callerDiv)
+        
+    }
+
+
+}
+
+callBtn?.addEventListener('click', call)
+
+let e:EventTarget|null
+
+firstPage?.addEventListener('click', function(e):void{
+    if (e.target == firstPage){
+        
+        pageSaldo!.classList.add('d-none')
+        pageRicarica!.classList.add('d-none')
+
+        firstPage?.classList.remove('filter-blur')
+        callBtn?.addEventListener('click', call)
     }
 
 })
-
-
-
-
 
 
 
