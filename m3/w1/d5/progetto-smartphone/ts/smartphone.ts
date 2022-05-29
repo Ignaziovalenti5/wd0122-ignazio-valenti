@@ -23,16 +23,21 @@ let appSaldo:HTMLElement|null = document.querySelector('#app-saldo')
 let callBtn:HTMLElement|null = document.querySelector('#call')
 
 let contatti:string[] = [
-    "Leanne Graham",
-    "Ervin Howell",
-    "Clementine Bauch",
-    "Patricia Lebsack",
-    "Chelsey Dietrich",
-    "Dennis Schulist",
-    "Kurtis Weissnat",
-    "Nicholas Runolf",
-    "Glenna Reichert",
-    "Clementina DuBuque"
+    "Leanne",
+    "Ervin",
+    "Clementine",
+    "Patricia",
+    "Chelsey",
+    "Dennis",
+    "Kurtis",
+    "Nicholas",
+    "Glenna",
+    "Clementina",
+    'John',
+    'Richard',
+    'Joe',
+    'Melissa',
+    'Joanna'
 ]
 
 
@@ -257,7 +262,7 @@ function call(): void {
     pageSaldo?.classList.remove('d-none')
     firstPage?.classList.add('filter-blur')
 
-    let randomNum2:number = Math.floor((Math.random()*10))
+    let randomNum2:number = Math.floor((Math.random()*15))
     let randomContact = contatti[randomNum2]
     let nameCallerElement:HTMLHeadingElement = document.createElement('h1')
     nameCallerElement!.innerText = randomContact

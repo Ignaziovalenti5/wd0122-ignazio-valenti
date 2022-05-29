@@ -148,16 +148,21 @@ let appRicarica = document.querySelector('#app-ricarica');
 let appSaldo = document.querySelector('#app-saldo');
 let callBtn = document.querySelector('#call');
 let contatti = [
-    "Leanne Graham",
-    "Ervin Howell",
-    "Clementine Bauch",
-    "Patricia Lebsack",
-    "Chelsey Dietrich",
-    "Dennis Schulist",
-    "Kurtis Weissnat",
-    "Nicholas Runolf",
-    "Glenna Reichert",
-    "Clementina DuBuque"
+    "Leanne",
+    "Ervin",
+    "Clementine",
+    "Patricia",
+    "Chelsey",
+    "Dennis",
+    "Kurtis",
+    "Nicholas",
+    "Glenna",
+    "Clementina",
+    'John',
+    'Richard',
+    'Joe',
+    'Melissa',
+    'Joanna'
 ];
 // ---------------------------------------------
 // TIME & DATE SETUP ----------------------------------------------
@@ -298,7 +303,7 @@ function call() {
     callBtn === null || callBtn === void 0 ? void 0 : callBtn.removeEventListener('click', call);
     pageSaldo === null || pageSaldo === void 0 ? void 0 : pageSaldo.classList.remove('d-none');
     firstPage === null || firstPage === void 0 ? void 0 : firstPage.classList.add('filter-blur');
-    let randomNum2 = Math.floor((Math.random() * 10));
+    let randomNum2 = Math.floor((Math.random() * 15));
     let randomContact = contatti[randomNum2];
     let nameCallerElement = document.createElement('h1');
     nameCallerElement.innerText = randomContact;
