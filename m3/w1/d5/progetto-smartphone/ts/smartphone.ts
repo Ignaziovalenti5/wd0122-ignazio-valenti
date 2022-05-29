@@ -154,7 +154,7 @@ appSaldo?.addEventListener('click', function(): void {
     let title:HTMLElement|null = document.querySelector('.title')
     title!.innerText = 'Il tuo saldo è di:'
     let saldo = user.numero404()
-    saldoText!.innerText = String(saldo + ' €')
+    saldoText!.innerHTML = String('<span class="fs-2">' + saldo + ' €<span>')
 
 })
 

@@ -234,7 +234,7 @@ appSaldo === null || appSaldo === void 0 ? void 0 : appSaldo.addEventListener('c
     let title = document.querySelector('.title');
     title.innerText = 'Il tuo saldo è di:';
     let saldo = user.numero404();
-    saldoText.innerText = String(saldo + ' €');
+    saldoText.innerHTML = String('<span class="fs-2">' + saldo + ' €<span>');
 });
 // ---------------------------------------------
 // APP CHIAMATE ---------------------------------------------------
