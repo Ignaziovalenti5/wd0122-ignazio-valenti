@@ -1,0 +1,19 @@
+<h3>Aggiungi Utente</h3>
+
+  <input name="name" type="text">
+  <button (click)="aggiungi()">Aggiungi</button>
+<hr>
+<table>
+  <thead>
+    <th>N°</th>
+    <th>Nome e Cognome</th>
+    <th>Elimina Utente</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let n of nomiUtenti">
+      <td>{{nomiUtenti.indexOf(n)+1}}</td>
+      <td>{{n}}</td>
+      <td><button (click)="elimina(n)">Elimina</button></td>
+    </tr>
+  </tbody>
+</table>
