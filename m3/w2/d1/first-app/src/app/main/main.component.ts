@@ -31,7 +31,12 @@ export class MainComponent implements OnInit {
     
     let newName:string = document.querySelector('input')!.value
 
-    this.nomiUtenti.push(newName)
+    if(newName){
+      this.nomiUtenti.push(newName)
+    }else{
+      alert('Inserisci un nome da aggiungere alla lista!')
+    }
+
     document.querySelector('input')!.value = ''
 
   }
