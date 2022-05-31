@@ -3,7 +3,7 @@
     <h1 class="text-center">Inactive Post</h1>
     
     <div *ngFor="let singlePost of post" class="card m-5">
-        <h5 class="card-header">Post</h5>
+        <h5 class="card-header">Post con id: {{singlePost.id}}</h5>
         <div class="card-body">
             <h5 class="card-title">{{singlePost.title}}</h5>
             <p class="card-text">{{singlePost.body}}</p>
