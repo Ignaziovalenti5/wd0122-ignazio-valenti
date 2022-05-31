@@ -8,9 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class MainComponent implements OnInit {
 
   nomiUtenti:string[] = []
-  
-  ngOnInit(): void {
 
+  ngOnInit(): void {
     fetch('https://jsonplaceholder.typicode.com/users')
     .then(res => res.json())
     .then(res => {
@@ -28,7 +27,6 @@ export class MainComponent implements OnInit {
   }
 
   aggiungi():void{
-    
     let newName:string = document.querySelector('input')!.value
 
     if(newName){
@@ -38,7 +36,6 @@ export class MainComponent implements OnInit {
     }
 
     document.querySelector('input')!.value = ''
-
   }
 
 }
