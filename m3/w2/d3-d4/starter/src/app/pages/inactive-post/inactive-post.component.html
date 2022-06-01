@@ -1,0 +1,28 @@
+<div class="container">
+
+    <h1 class="text-center">Inactive Post</h1>
+    
+    <div
+    [ngClass]="{
+        'bg-warning': singlePost.type == 'news',
+        'bg-info': singlePost.type == 'education',
+        'bg-dark text-white': singlePost.type == 'politic'
+    }"
+    *ngFor="let singlePost of posts" class="card m-3"
+    >
+
+        <div>
+            <h5 class="card-header">Post con id: {{singlePost.id}}</h5>
+            <div class="card-body">
+                <h5 class="card-title">{{singlePost.title}}</h5>
+                <p class="card-text">{{singlePost.body}}</p>
+            </div>
+
+        </div>
+
+        <div class="col-3 p-3">
+            <button (click)="activatePost(singlePost)" class="btn btn-primary">Attiva</button>
+        </div>
+
+    </div>
+</div>
