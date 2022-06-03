@@ -1,0 +1,31 @@
+
+nav{
+    background: rgb(65,150,124);
+    background: linear-gradient(0deg, rgba(65,150,124,1) 0%, rgba(123,230,197,1) 100%);
+    margin: 0;
+    padding: 20px 0;
+    border-radius: 25px;
+    box-shadow: 0 0 5px #6e6e6e;
+}
+
+ul{
+    text-align: center;
+    
+    li{
+        display: inline-block;
+        margin: 0 30px;
+        font-size: 1.2rem;
+        
+        
+        a{
+            text-decoration: none;
+            color: #dcdcdc;
+            text-shadow: 0px 0px 5px #6e6e6e;
+        }
+    }
+}
+
+.active{
+    color: #ffffff !important;
+    font-size: 2rem;
+}

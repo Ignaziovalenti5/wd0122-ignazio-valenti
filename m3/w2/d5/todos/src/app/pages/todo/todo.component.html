@@ -1,0 +1,31 @@
+
+<div *ngIf="!loading" class="form-container">
+
+    <h1>Add new Todo</h1>
+
+    <div class="form">
+        <form action="">
+            <input [(ngModel)]="todo" type="text" name="todo">
+            <button class="add-btn" (click)="addTodo()">+</button>
+        </form>
+    </div>
+        
+    <table *ngFor="let t of todos" class="todo-container">
+        <tr class="todo">
+            <td>{{t.title}}</td>
+            <td><button (click)="setCompleted(t)">Done</button></td>
+        </tr>
+    </table>
+
+    <div *ngIf="noTodo" class="noTodo-div">
+        <h3>No tasks found!</h3>
+    </div>
+
+    
+</div>
+
+<div *ngIf="loading" class="loading-div">
+    
+        <h3>Recupero Task</h3><div class="lds-ellipsis"><div></div><div></div><div></div><div></div>
+    </div>
+</div>

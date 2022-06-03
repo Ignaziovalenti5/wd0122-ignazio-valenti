@@ -1,0 +1,15 @@
+import { ITodos } from "../interface/todos"
+
+export class Todo implements ITodos{
+    
+    id!:number
+    title!:string
+    completed!:boolean
+
+    constructor(id:number, title: string, completed:boolean){
+        this.id = id
+        this.title = title
+        this.completed = completed
+    }
+
+}
