@@ -58,6 +58,9 @@ function setTime(_date:string, _time:string):void{
     if(now.length == 19){
         date = now.slice(0,9);
         time = now.slice(11, 16);
+    }else if(now.length == 18){
+        date = now.slice(0,8);
+        time = now.slice(10, 15);
     }else if(now.length == 20){
         date = now.slice(0,10);
         time = now.slice(12, 17);
