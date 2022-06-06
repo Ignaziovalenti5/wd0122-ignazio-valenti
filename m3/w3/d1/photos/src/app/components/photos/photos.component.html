@@ -1,0 +1,28 @@
+
+<div class="container">
+
+    
+    <h3 class="text-center pt-5">Totale Foto favorite = {{count}}</h3>
+    
+    <hr>
+    
+    <div *ngIf="loading" class="text-center mt-5">
+        <h4>Loading Photo Cards...</h4>
+    </div>
+
+    <div *ngIf="!loading" class="d-flex flex-wrap">
+
+        <div *ngFor="let photo of photos" class="card m-3" style="width: 15rem;">
+            <img src={{photo.thumbnailUrl}} class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">{{photo.title}}</p>
+                <div class="d-flex">
+                    <button (click)="eliminaPhoto(photo.id)" class="btn btn-danger me-3">Elimina</button>
+                    <button (click)="miPiacePhoto()" class="btn btn-success">Mi piace</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+</div>
