@@ -1,0 +1,52 @@
+
+
+<div class="container">
+
+    <form (ngSubmit)="submit()" #f="ngForm">
+        
+        <div class="mb-3">
+            <label for="name" class="form-label">Nome</label>
+            <input #name="ngModel" ngModel name="name" type="name" class="form-control" id="name" required>
+            <p [style.color]="'red'" *ngIf="name.invalid && name.touched">*Nome non valido!</p>
+        </div>
+
+        <div class="mb-3">
+            <label for="alter-ego" class="form-label">Alter Ego</label>
+            <input #alterEgo="ngModel" ngModel name="alter-ego" type="text" class="form-control" id="alter-ego" required>
+            <p [style.color]="'red'" *ngIf="alterEgo.invalid && alterEgo.touched">*Alter Ego non valido!</p>
+        </div>
+        
+        <div class="mb-3">
+            <label for="power" class="form-label">Super Potere</label>
+            <select #power="ngModel" ngModel name="power" type="text" class="form-control" id="power" required>
+                <option value="">Seleziona</option>
+                <option value="Forza">Forza</option>
+                <option value="Agilità">Agilità</option>
+                <option value="Velocita">Velocita</option>
+            </select>
+            <p [style.color]="'red'" *ngIf="power.invalid && power.touched">*Super Potere non valido!</p>
+        </div>
+
+        <div class="mb-3">
+            <label for="enemy" class="form-label">Nemico</label>
+            <input #enemy="ngModel" ngModel name="enemy" type="text" class="form-control" id="enemy" required maxlength="10">
+            <p [style.color]="'red'" *ngIf="enemy.invalid && enemy.touched">*Nemico non valido!</p>
+        </div>
+
+        <div class="mb-3">
+            <label for="planet" class="form-label">Pianeta</label>
+            <input #planet="ngModel" ngModel name="planet" type="text" class="form-control" id="planet" required minlength="5">
+            <p [style.color]="'red'" *ngIf="planet.invalid && planet.touched">*Pianeta non valido!</p>
+        </div>
+        
+        <div class="mb-3">
+            <label for="weakness" class="form-label">Debolezza</label>
+            <input #weakness="ngModel" ngModel name="weakness" type="text" class="form-control" id="weakness">
+            <p [style.color]="'red'" *ngIf="weakness.invalid && weakness.touched">*Debolezza non valido!</p>
+        </div>
+        
+
+        <button type="submit" class="btn btn-primary">Invia</button>
+    </form>
+    
+</div>

@@ -1,0 +1,75 @@
+<div class="container">
+
+    <form [formGroup]="form" (ngSubmit)="submit()">
+        
+        <div class="mb-3">
+            <label for="name" class="form-label">Nome</label>
+            <input formControlName="name" type="name" class="form-control" id="name">
+            <p [style.color]="'red'" *ngIf="getFormC('name')?.invalid &&
+          getFormC('name')?.touched">*Nome non valido!</p>
+        </div>
+
+        <div class="mb-3">
+            <label for="alter-ego" class="form-label">Alter Ego</label>
+            <input formControlName="alterEgo" type="text" class="form-control" id="alter-ego">
+            <p [style.color]="'red'" *ngIf="getFormC('alterEgo')?.invalid &&
+          getFormC('alterEgo')?.touched">*Alter Ego non valido!</p>
+        </div>
+
+
+
+
+        <!-- POWER -------------------------------------------------->
+        
+        <div class="mb-3">
+            <h6>Super Potere</h6>
+            <button type="button" class="btn btn-danger" (click)="addPower()">Aggiungi Super Potere</button>
+            <div *ngFor="let power of getPowerFields(); let i = index">
+                <input [formControlName]="i" type="text" class="form-control">
+                <p [style.color]="'red'" *ngIf="getFormC('power')?.invalid &&
+          getFormC('powers')?.touched">*Super Potere non valido!</p>
+            </div>
+        </div>
+
+        <!-- ----------------------------------------------------- -->
+
+
+
+
+        <div class="mb-3">
+            <label for="enemy" class="form-label">Nemico</label>
+            <input formControlName="enemy" type="text" class="form-control" id="enemy">
+            <p [style.color]="'red'" *ngIf="getFormC('enemy')?.invalid &&
+          getFormC('enemy')?.touched">*Nemico non valido!</p>
+        </div>
+
+        <div class="mb-3">
+            <label for="planet" class="form-label">Pianeta</label>
+            <input formControlName="planet" type="text" class="form-control" id="planet">
+            <p [style.color]="'red'" *ngIf="getFormC('planet')?.invalid &&
+          getFormC('planet')?.touched">*Pianeta non valido!</p>
+        </div>
+        
+
+
+
+        <!-- WEAKNESS ----------------------------------------------->
+
+        <div class="mb-3">
+            <h6>Debolezza</h6>
+            <button type="button" class="btn btn-danger" (click)="addWeakness()">Aggiungi Debolezza</button>
+            <div *ngFor="let weakness of getWeaknessFields(); let i = index">
+                <input [formControlName]="i" type="text" class="form-control">
+            </div>
+            <p [style.color]="'red'" *ngIf="getFormC('weakness')?.invalid &&
+          getFormC('weaknesses')?.touched">*Debolezza non valido!</p>
+        </div>
+        <!-- ----------------------------------------------------- -->
+
+
+
+
+        <button [disabled]="form.invalid" type="submit" class="btn btn-primary">Invia</button>
+    </form>
+    
+</div>
