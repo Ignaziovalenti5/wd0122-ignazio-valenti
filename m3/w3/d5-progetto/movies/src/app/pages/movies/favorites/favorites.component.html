@@ -1,0 +1,35 @@
+<app-header></app-header>
+
+<div class="movies-container">
+
+    <div class="container">
+
+      <h2>Film Preferiti / <span><a [routerLink]="['/movies']">Torna ai Popular Movies</a></span></h2>
+        
+        <div class="movies-main">
+
+            <div class="movie-card" *ngFor="let movie of favoriteMovies">
+
+                <mat-card class="example-card">
+                    <mat-card-header>
+                      <div mat-card-avatar class="example-header-image"></div>
+                      <mat-card-title>{{movie.titolo}}</mat-card-title>
+                      <mat-card-subtitle>{{movie.durata}}</mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image src={{movie.urlFoto}} alt={{movie.title}}>
+                    <mat-card-content>
+                      <p> {{movie.descrizione}} </p>
+                    </mat-card-content>
+                    <mat-card-actions>
+                      <button (click)="removeFavorite(movie.id)" mat-button>RIMUOVI DAI PREFERITI</button>
+                    </mat-card-actions>
+                  </mat-card>
+
+            </div>
+
+        </div>
+
+    </div>
+    
+    <app-footer></app-footer>
+</div>

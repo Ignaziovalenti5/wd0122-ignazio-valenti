@@ -1,0 +1,30 @@
+
+
+<div class="home">
+
+    <div class="login-container">
+        
+        <h1>MyMovies App</h1>
+        
+        <div class="forms">
+
+            <p>Sei già un membro?</p>
+
+            <form>
+                <input type="email" placeholder="E-mail" [(ngModel)]="authData.email" name="email">
+                <input type="password" placeholder="Password" [(ngModel)]="authData.password" name="password">
+                
+                <button (click)="login()" mat-raised-button color="primary">Accedi</button>
+              </form>
+
+            <p>oppure</p>            
+
+            <button (click)="goToRegisterPage()" mat-raised-button color="accent">Registrati!</button>
+        
+        </div>
+
+    </div>
+
+</div>
+
+

@@ -1,0 +1,22 @@
+
+
+<mat-toolbar>
+        
+    <span>MyMovies App</span>
+
+    <div>
+        <h3>Benvenuto/a <b>{{name}}</b></h3>
+        <button class="profilo" (click)="goToUserPage()" mat-raised-button color="accent">Profilo</button>
+        <button class="logout" (click)="logout()" mat-raised-button color="primary">Logout</button>
+    </div>
+        
+</mat-toolbar>
+
+<div *ngIf="viewUser" class="user">
+        <h4>id: {{user.id}}</h4>
+        <h4>Nome: {{user.first_name}}</h4>
+        <h4>Cognome: {{user.last_name}}</h4>
+        <h4>email: {{user.email}}</h4>
+        <button (click)="deleteAccount(user.id)" mat-raised-button color="warn">Cancella Account</button>
+</div>
+

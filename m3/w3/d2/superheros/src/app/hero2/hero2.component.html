@@ -21,7 +21,7 @@
 
         <!-- POWER -------------------------------------------------->
         
-        <div class="mb-3">
+        <div class="mb-3" formArrayName="powers">
             <h6>Super Potere</h6>
             <button type="button" class="btn btn-danger" (click)="addPower()">Aggiungi Super Potere</button>
             <div *ngFor="let power of getPowerFields(); let i = index">
@@ -55,7 +55,7 @@
 
         <!-- WEAKNESS ----------------------------------------------->
 
-        <div class="mb-3">
+        <div class="mb-3" formArrayName="weaknesses">
             <h6>Debolezza</h6>
             <button type="button" class="btn btn-danger" (click)="addWeakness()">Aggiungi Debolezza</button>
             <div *ngFor="let weakness of getWeaknessFields(); let i = index">

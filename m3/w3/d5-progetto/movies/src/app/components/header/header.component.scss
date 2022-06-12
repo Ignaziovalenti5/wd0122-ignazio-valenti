@@ -1,0 +1,46 @@
+
+mat-toolbar{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    background-color: black;
+    margin: 0 auto;
+    position: relative;
+
+    span{
+        margin-left: 10%;
+    }
+
+    div{
+        display: flex;
+        flex-direction: row;
+        margin-right: 10%;
+    }
+
+    h3{
+        font-size: 14px;
+        margin-right: 5px;
+        font-weight: 400;
+
+        b{
+            font-size: 18px;
+        }
+    }
+    .profilo{
+        margin-right: 20px;
+    }
+
+}
+
+.user{
+    position: absolute;
+    top: 70px;
+    right: 20%;
+    color: white;
+    text-align: left;
+    background-color: #222121;
+    padding: 30px;
+    z-index: 100
+}

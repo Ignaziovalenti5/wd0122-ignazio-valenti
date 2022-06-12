@@ -1,0 +1,60 @@
+{
+  "users": [],
+  "favorites": [],
+  "movies": [
+    {
+      "id": 1,
+      "titolo": "Iron Man",
+      "descrizione": "Dopo essere sopravvissuto ad un attacco inaspettato in territorio nemico, l'industriale Tony Stark costruisce un'armatura ad alta tecnologia e giura di proteggere il mondo nei panni di Iron Man.",
+      "anno": "2008",
+      "durata": "2h 6m",
+      "genere": "Azione, Fantascienza",
+      "urlFoto": "../../../assets/img/ironman.jpeg"
+    },
+    {
+      "id": 2,
+      "titolo": "Il gradiatore",
+      "descrizione": "Il generale romano Massimo Decimo Meridio, comandante dell'esercito del Nord, ha condotto ancora una volta i suoi legionari alla vittoria, ed ora spera di poter tornare alla sua famiglia. Ma il sovrano Marco Aurelio, oramai vecchio e stanco, gli chiede di assumere il comando dell'impero dopo la sua morte.",
+      "anno": "2000",
+      "durata": "2h 35m",
+      "genere": "Epico, Storico, Drammatico",
+      "urlFoto": "../../../assets/img/il-gladiatore.jpeg"
+    },
+    {
+      "id": 3,
+      "titolo": "Joker",
+      "descrizione": "Arthur Fleck, attore comico fallito ed ignorato dalla società, vaga per le strade di Gotham City iniziando una lenta e progressiva discesa negli abissi della follia, sino a divenire una delle peggiori menti criminali della storia.",
+      "anno": "2019",
+      "durata": "2h 2m",
+      "genere": "Giallo/Drammatico",
+      "urlFoto": "../../../assets/img/joker.jpeg"
+    },
+    {
+      "id": 4,
+      "titolo": "Titanic",
+      "descrizione": "Il transatlantico Titanic, considerato un gioiello tecnologico ed il più lussuoso piroscafo da crociera mai realizzato, salpa dall'Inghilterra il dieci aprile del 1912 con oltre 1500 passeggeri a bordo per il suo viaggio inaugurale. I viaggiatori sono collocati in tre classi, riflesso delle differenze sociali.",
+      "anno": "1997",
+      "durata": "3h 14m",
+      "genere": "Romantico/Drammatico",
+      "urlFoto": "../../../assets/img/titanic.jpeg"
+    },
+    {
+      "id": 5,
+      "titolo": "Pulp Fiction",
+      "descrizione": "Un killer si innamora della moglie del suo capo, un pugile rinnega la sua promessa e una coppia tenta una rapina che va rapidamente fuori controllo.",
+      "anno": "1994",
+      "durata": "2h 34m",
+      "genere": "Giallo/Drammatico",
+      "urlFoto": "../../../assets/img/pulp-fiction.jpeg"
+    },
+    {
+      "id": 6,
+      "titolo": "Kill Bill - Vol.1",
+      "descrizione": "Risvegliatasi dal coma, una assassina va alla ricerca del suo ex capo e della gang responsabile dell'agguato in cui è caduta quattro anni prima.",
+      "anno": "2003",
+      "durata": "1h 51m",
+      "genere": "Azione/Giallo",
+      "urlFoto": "../../../assets/img/kill-bill.jpg"
+    }
+  ]
+}

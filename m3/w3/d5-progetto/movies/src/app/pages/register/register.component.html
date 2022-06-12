@@ -1,0 +1,27 @@
+  
+
+  <div class="register">
+
+    <div class="register-container">
+
+      <h1>My Movies App</h1>
+        
+      <h3>Inserisci tutti i campi:</h3>
+        
+      <div class="forms">
+
+        <form>
+          <input type="text" placeholder="Nome" [(ngModel)]="authData.first_name" name="first-name">
+          <input type="text" placeholder="Cognome" [(ngModel)]="authData.last_name" name="last-name">
+          <input type="email" placeholder="Email" [(ngModel)]="authData.email" name="email">
+          <input type="password" placeholder="Password" [(ngModel)]="authData.password" name="password">
+            
+          <button (click)="register()" mat-raised-button color="accent">Registrati</button>
+          <a [routerLink]="['/']">Torna alla home</a>
+          </form>
+
+      </div>
+
+    </div>
+
+</div>
